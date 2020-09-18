@@ -1,5 +1,5 @@
+require('dotenv').config(); 
 const Discord = require("discord.js");
-
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
@@ -11,6 +11,10 @@ bot.on("ready", async () => {
 
 bot.on("message", async message => {
     if(message.author.bot || message.channel.type === "dm") return;
+    if (message.content.indexOf(nm!) !== 0) return;
+
+    const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
 	
 	if (message.channel.id == "721150326526181408") {
         message.react('❤️');
