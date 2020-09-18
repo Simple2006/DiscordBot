@@ -1,22 +1,25 @@
 {
+
   "name": "discord-bot",
+
+  "description": "Example",
+
   "version": "1.0.0",
-  "description": "NexusMart Discord Bot",
-  "main": "index.js",
-  "dependencies": {
-    "discord.js": "^12.2.0"
-  },
-  "devDependencies": {},
+
+  "main": "bot.js",
+
   "scripts": {
+
     "start": "node bot.js"
+
   },
-  "repository": {
-    "type": "git",
-    "url": "DiscordBot"
-  },
-  "keywords": [
-    "Discord"
-  ],
-  "author": "Simple",
-  "license": "ISC"
+
+  "dependencies": {
+
+    "discord.js": "12.2.0",
+
+    "request": "2.81.0"
+
+  }
+
 }
