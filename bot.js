@@ -62,7 +62,7 @@ bot.on("message", async message => {
                         const embed = new Discord.MessageEmbed()
                             .setColor(0x695DCF)
                             .setAuthor('Duping Calculator')
-                            .setDescription('\nPlease enter a valid number above 0 to work out a price.');
+                            .setDescription('\nPlease enter a valid number above 0 to estimate a price.');
                         message.channel.send(embed);
                         break;
                     }
@@ -85,7 +85,7 @@ bot.on("message", async message => {
                             let content = reply.content;
 
                             if (!isNaN(content)) {
-                                let dupeAmount = parseInt(dupeAmount);
+                                let dupeAmount = parseInt(content);
                                 if (dupeAmount < 1 || dupeAmount >= 100000) break;
 
                                 if (dupeAmount == 1) let cost = 25;
