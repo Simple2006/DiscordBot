@@ -44,9 +44,77 @@ bot.on("message", async message => {
     if(cmd === `${prefix}hello`){
         return message.channel.send("Hello!")
     }
-	
-	const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
 
+    switch(cmd)
+    {
+        case `${prefix}hello`:
+
+            break;
+        case `${prefix}`:
+                if (args[0] && !isNaN(args[0])) {
+                    let dupeAmount = parseInt(args[0]);
+                    
+                    if (dupeAmount == 1) let cost = 25;
+                    else if (dupeAmount == 2) let cost = 40;
+                    else if (dupeAmount >= 3 && dupeAmount < 100000) {
+                        let cost = 40 + ((dupeAmount - 2) * 10);
+                    } else {
+                        const embed = new Discord.MessageEmbed()
+                            .setColor(0x695DCF)
+                            .setAuthor('Duping Calculator')
+                            .setDescription('\nPlease enter a valid number above 0 to work out a price.');
+                        message.channel.send(embed);
+                        break;
+                    }
+
+                    const embed = new Discord.MessageEmbed()
+                            .setColor(0x695DCF)
+                            .setAuthor('Duping Calculator')
+                            .setDescription(`\The price of your dupes is: \`${cost}\``);
+                    message.channel.send(`@${message.author.tag}`, { embed });
+                    break;
+                } else {
+                    const embed = new Discord.MessageEmbed()
+                            .setColor(0x695DCF)
+                            .setAuthor('Duping Calculator')
+                            .setDescription('\nPlease enter the number of dupes you need a price for');
+                    message.channel.send(embed);
+
+                    message.channel.awaitMessages(msg => msg.author.id == message.author.id, 
+                        {max: 1, time: 30000}).then(reply => {
+                            let content = reply.content;
+
+                            if (!isNaN(content)) {
+                                let dupeAmount = parseInt(dupeAmount);
+                                if (dupeAmount < 1 || dupeAmount >= 100000) break;
+
+                                if (dupeAmount == 1) let cost = 25;
+                                else if (dupeAmount == 2) let cost = 40;
+                                else if (dupeAmount >= 3 && dupeAmount < 100000) {
+                                    let cost = 40 + ((dupeAmount - 2) * 10);
+                                } else {
+                                    const embed = new Discord.MessageEmbed()
+                                        .setColor(0x695DCF)
+                                        .setAuthor('Duping Calculator')
+                                        .setDescription('\nPlease enter a valid number above 0 to work out a price.');
+                                    message.channel.send(embed);
+                                    break;
+                                }
+
+                                const embed = new Discord.MessageEmbed()
+                                    .setColor(0x695DCF)
+                                    .setAuthor('Duping Calculator')
+                                    .setDescription(`\The price of your dupes is: \`${cost}\``);
+                                message.channel.send(`@${message.author.tag}`, { embed });
+                            }
+                    });
+                }
+            break;
+    }
+    
+    // check if the user sending the command has the Admin role, otherwise return
+
+	const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
 	if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
 
     if(cmd === `${prefix}thicket`){
