@@ -36,7 +36,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix ='nm!';
+    bot.login(process.env.BOT_PREFIX);
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -555,4 +555,4 @@ bot.on("message", async message => {
 	}
 })
 
-bot.login("NzMwODEwMjMyNTQ0MTY1OTQ5.Xwc6EQ.CtO_fEYIh1XO05QntY8EndK9yIQ")
+bot.login(process.env.BOT_TOKEN)
