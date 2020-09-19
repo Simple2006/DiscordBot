@@ -50,7 +50,7 @@ bot.on("message", async message => {
         case `${prefix}hello`:
 
             break;
-        case `${prefix}`:
+        case `${prefix}`dupesprice:
                 if (args[0] && !isNaN(args[0])) {
                     let dupeAmount = parseInt(args[0]);
                     
