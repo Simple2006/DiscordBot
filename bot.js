@@ -568,10 +568,10 @@ bot.on("message", async message => {
 
     if(cmd === 	`${prefix}ban`){
 	if (!message.mentions.users.size) {
-		return message.reply('you need to tag a user in order to info them!');
+		return message.reply('you need to tag a user in order to ban them!');
 	}
 	const taggedUser = message.mentions.users.first();
-	return message.guild.ban(taggedUser)
+	await message.guild.ban(taggedUser)
 
     }
 	
