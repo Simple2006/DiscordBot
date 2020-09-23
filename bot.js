@@ -63,7 +63,7 @@ bot.on("message", async message => {
 	return message.channel.send(`Username: ${taggedUser.username}\n ID: ${taggedUser.id}`);
     }
 	
-    if(command === 'dupe') {
+    if(cmd === `${prefix}dupe`) {
 	const amount = parseInt(args[0]);
 
 	if(isNaN(amount)){
