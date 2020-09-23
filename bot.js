@@ -69,6 +69,9 @@ bot.on("message", async message => {
 	if(isNaN(amount)){
 		return message.reply('that doesn\'t seem to be a valid number.');
 	}
+	else if(amount < 1){
+		return message.reply('Choose a value above 0')
+	}
 	else if(amount === 1){
 		return message.reply('Price is ' + $25)	
 	}
