@@ -44,6 +44,20 @@ bot.on("message", async message => {
     if(cmd === `${prefix}hello`){
         return message.channel.send("Hello!")
     }
+
+    if (message.content === `${prefix}ping`) {
+	message.channel.send("Pong.");
+    } 
+	
+    if (message.content === `${prefix}server`) {
+	message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+    }
+	
+    if (message.content === `${prefix}user-info`) {
+	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+    }
+
+	
     
     // check if the user sending the command has the Admin role, otherwise return
 
