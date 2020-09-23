@@ -569,6 +569,7 @@ bot.on("message", async message => {
        const user = message.mentions.users.first();
        const member = message.guild.member(user);
        member.ban()
+       message.channel.send(member + " was banned!")
    }
 	
 })
