@@ -78,8 +78,8 @@ bot.on("message", async message => {
 	else if(amount === 2){
 		return message.reply('Price is ' + $40);
 	}
-	else(){
-		x = 40 + amount * 10
+	else{
+		x = 40 + amount * 10;
 		return message.reply('Price is $' + x);
 	}
 	
