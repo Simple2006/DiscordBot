@@ -70,17 +70,17 @@ bot.on("message", async message => {
 		return message.reply('that doesn\'t seem to be a valid number.');
 	}
 	else if(amount < 1){
-		return message.reply('Choose a value above 0')
+		return message.reply('Choose a value above 0');
 	}
 	else if(amount === 1){
-		return message.reply('Price is ' + $25)	
+		return message.reply('Price is ' + $25);
 	}
 	else if(amount === 2){
-		return message.reply('Price is ' + $40)
+		return message.reply('Price is ' + $40);
 	}
 	else(){
 		x = 40 + amount * 10
-		return message.reply('Price is $' + x)
+		return message.reply('Price is $' + x);
 
 	// ...
 }
