@@ -53,7 +53,7 @@ bot.on("message", async message => {
 	return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     }
 	
-    if(cmd === `${prefix}user`){
+    if(cmd === `${prefix}info`){
 	if (!message.mentions.users.size) {
 	return message.reply('you need to tag a user in order to info them!');
 	}
