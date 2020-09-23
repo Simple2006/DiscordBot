@@ -55,13 +55,32 @@ bot.on("message", async message => {
 	
     if(cmd === `${prefix}info`){
 	if (!message.mentions.users.size) {
-	return message.reply('you need to tag a user in order to info them!');
+		return message.reply('you need to tag a user in order to info them!');
 	}
 	    
 	const taggedUser = message.mentions.users.first();
 	    
 	return message.channel.send(`Username: ${taggedUser.username}\n ID: ${taggedUser.id}`);
     }
+	
+    if(command === 'dupe') {
+	const amount = parseInt(args[0]);
+
+	if(isNaN(amount)){
+		return message.reply('that doesn\'t seem to be a valid number.');
+	}
+	else if(amount === 1){
+		return message.reply('Price is ' + $25)	
+	}
+	else if(amount === 2){
+		return message.reply('Price is ' + $40)
+	}
+	else(){
+		x = 40 + amount * 10
+		return message.reply('Price is $' + x)
+
+	// ...
+}
 
 	
     
