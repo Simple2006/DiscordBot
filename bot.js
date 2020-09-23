@@ -44,27 +44,6 @@ bot.on("message", async message => {
     if(cmd === `${prefix}hello`){
         return message.channel.send("Hello!")
     }
-
-    switch (cmd) {
-    case 'ping': {
-      message.channel.send('Pong! (~ ' + client.ping + 'ms)');
-      break;
-    }
-
-
-    case 'uptime': {
-      // client.uptime is in millseconds
-      // this is just maths, I won't explain much of it
-      // % is modulo, AKA the remainder of a division
-      let days = Math.floor(client.uptime / 86400000);
-      let hours = Math.floor(client.uptime / 3600000) % 24;
-      let minutes = Math.floor(client.uptime / 60000) % 60;
-      let seconds = Math.floor(client.uptime / 1000) % 60;
-
-      message.channel.send(`__Uptime:__\n${days}d ${hours}h ${minutes}m ${seconds}s`);
-      break;
-    }
-  }
     
     // check if the user sending the command has the Admin role, otherwise return
 
