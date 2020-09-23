@@ -321,7 +321,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 	
-	    if(cmd === `${prefix}lefttomax`){
+    if(cmd === `${prefix}lefttomax`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("/tell Mreyeball lefttomax")
@@ -351,7 +351,7 @@ bot.on("message", async message => {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Purchase Decas & STs")
-		.addField("Additional Info:",
+	.addField("Additional Info:",
 		"Minimum Purchase of 16 Decas\nBulk Purchases are Subject to Discount")
         .setThumbnail("https://media2.giphy.com/media/MXjdlNtjfxjxQsevj6/giphy.gif")
         .addField("Price:",
@@ -379,7 +379,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 	
-	if(cmd === `${prefix}oryx3-running`){
+    if(cmd === `${prefix}oryx3-running`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Oryx 3 Running")
@@ -397,7 +397,7 @@ bot.on("message", async message => {
 		
 	}
 	
-	if(cmd === `${prefix}duping-overview`){
+    if(cmd === `${prefix}duping-overview`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Doubling Overview")
@@ -406,18 +406,18 @@ bot.on("message", async message => {
         "<@728448495085682758>, is vouched and finish your orders at the highest proficiency. Charles has been playing RotMG for over 9+ years and has gained MANY vouches in a short amount of time.\n You will not go wrong when buying from him!")
         .addField("In this service:",
 		"One UT Double means that your characters inventory will be doubled. We highly advise putting 8 items in the inventory to maximize the value for money.")
-		.setDescription("Information about our Doubling Service")
+	.setDescription("Information about our Doubling Service")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
 		
 	}
 	
-	if(cmd === `${prefix}duping`){
+    if(cmd === `${prefix}duping`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("UT Doubling")
-		.addField("Info:",
+	.addField("Info:",
 		"1 Double = 8 Items in an Inventory Being Doubled")
         .addField("\nPricing:",
          "One Double: `$25.00`\nTwo Doubles: `$40.00`\nProceeding Doubles: `$10.00` Per Double")
@@ -428,7 +428,7 @@ bot.on("message", async message => {
 	
 	}
 		
-	if(cmd === `${prefix}vaultslot`){
+    if(cmd === `${prefix}vaultslot`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Vault and Character Slot Doubling")
@@ -437,7 +437,7 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/a2K3BpC.png")
         .addField("Additional Info:",
         "Must purchase at least 24 vault and char slots combined.")
-		.addField("Pricing:",
+	.addField("Pricing:",
 		"0 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.")
         .setDescription("Purchase the cheapest vaults and slots")
         .setFooter("NexusMart")
@@ -446,11 +446,11 @@ bot.on("message", async message => {
 		
 	}
 	
-	if(cmd === `${prefix}runes`){
+    if(cmd === `${prefix}runes`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Oryx 3 Rune Doubling")
-		.setThumbnail("https://i.imgur.com/uPLEGcD.png")
+	.setThumbnail("https://i.imgur.com/uPLEGcD.png")
         .addField("Pricing:",
         "0 - 24 : $2.00 ea.\n24 - 64 : $1.50 ea.\n64+ : $1.25 ea.")
         .setDescription("Need Oryx 3 Runes doubled? Start a ticket!")
@@ -468,7 +468,7 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/OJKeuVG.png")
         .addField("Additional Info:",
         "If you would like to discuss pricing for bringing your pet to a certain level or rarity, start a ticket.")
-		.addField("Pricing:",
+	.addField("Pricing:",
 		"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Pet Food")
         .setFooter("NexusMart")
@@ -483,7 +483,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "Must have At least one Quest Chest or ST token/chest!")
         .setThumbnail("https://i.imgur.com/KOHUjk0.png")
-		.addField("Pricing:",
+	.addField("Pricing:",
 		"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Quest Chest & ST Chest Doubles")
         .setFooter("NexusMart")
@@ -491,11 +491,11 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 	
-	if(cmd === `${prefix}misc`){
+    if(cmd === `${prefix}misc`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Miscellaneous Doubling")
-		.setThumbnail("https://i.imgur.com/efX1IUQ.png")
+	.setThumbnail("https://i.imgur.com/efX1IUQ.png")
         .addField("About:",
         "We can double anything that you need! If you need something doubled that we don't list e.g Shards, Tokens, Etc., Start a ticket!")
         .setDescription("Need something we don't list doubled? Start a ticket!")
@@ -505,7 +505,7 @@ bot.on("message", async message => {
 	
 	}
 	
-	if(cmd === `${prefix}accounts`){
+    if(cmd === `${prefix}accounts`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Account Sales")
@@ -513,14 +513,14 @@ bot.on("message", async message => {
         ":ribbon: We sell accounts on this channel! If you would like to sell your account, DM me and we can put it up here! If you would like to buy an account, please check out the pictures posted here and start a ticket to discuss a price or purchase the account!:ribbon:")
         .addField("**IMPORTANT NOTICE:**",
 		"None of the accounts sold are stolen.\nAll of our accounts are either created by the our staff, bought from people that are looking to sell their account, or accounts we are selling for people and giving them a cut.")
-		.setDescription("Want to buy an account? Start a ticket!")
+	.setDescription("Want to buy an account? Start a ticket!")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
 	
 	}
 	
-		if(cmd === `${prefix}star`){
+    if(cmd === `${prefix}star`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Star Service")
@@ -535,7 +535,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
 	}
 	
-	if(cmd === `${prefix}roulette`){
+    if(cmd === `${prefix}roulette`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Welcome to NexusMart's Test of Luck!")
@@ -548,7 +548,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 	
-		if(cmd === `${prefix}keyper`){
+    if(cmd === `${prefix}keyper`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Keyper Farming")
@@ -565,6 +565,54 @@ bot.on("message", async message => {
         message.channel.send(embed)
 		
 	}
+   const args = message.content.split(' ').slice(1); // All arguments behind the command name with the prefix
+
+   const user = message.mentions.users.first(); // returns the user object if an user mention exists
+   const banReason = args.slice(1).join(' '); // Reason of the ban (Everything behind the mention)
+
+// Check if an user mention exists in this message
+   if (!user) {
+      try {
+// Check if a valid userID has been entered instead of a Discord user mention
+      if (!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');
+// If the client (bot) can get a user with this userID, it overwrites the current user variable to the user object that the client fetched
+      user = message.guild.members.get(args.slice(0, 1).join(' '));
+      user = user.user;
+      } catch (error) {
+      return message.reply('Couldn\' get a Discord user with this userID!');
+      }
+      }
+      if (user === message.author) return message.channel.send('You can\'t ban yourself'); // Check if the user mention or the entered userID is the message author himsmelf
+      if (!reason) return message.reply('You forgot to enter a reason for this ban!'); // Check if a reason has been given by the message author
+      if (!message.guild.member(user).bannable) return message.reply('You can\'t ban this user because you the bot has not sufficient permissions!'); // Check if the user is bannable with the bot's permissions
+
+      await message.guild.ban(user) // Bans the user
+
+      const banConfirmationEmbed = new Discord.RichEmbed()
+      .setColor('RED')
+      .setDescription(`✅ ${user.tag} has been successfully banned!`);
+      message.channel.send({
+      embed: banConfirmationEmbed
+      }); // Sends a confirmation embed that the user has been successfully banned
+
+
+      const modlogChannelID = ''; // Discord channel ID where you want to have logged the details about the ban
+      if (modlogChannelID.length !== 0) {
+      if (!client.channels.get(modlogChannelID )) return undefined; // Check if the modlogChannelID is a real Discord server channel that really exists
+
+      const banConfirmationEmbedModlog = new Discord.RichEmbed()
+      .setAuthor(`Banned by **${msg.author.username}#${msg.author.discriminator}**`, msg.author.displayAvatarURL)
+      .setThumbnail(user.displayAvatarURL)
+      .setColor('RED')
+      .setTimestamp()
+      .setDescription(`**Action**: Ban
+      **User**: ${user.username}#${user.discriminator} (${user.id})
+      **Reason**: ${reason}`);
+      client.channels.get(modlogChannelID).send({
+      embed: banConfirmationEmbedModlog
+      }); // Sends the RichEmbed in the modlogchannel
+      }	
+    
 })
 
 bot.login(process.env.BOT_TOKEN)
