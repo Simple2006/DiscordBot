@@ -45,16 +45,16 @@ bot.on("message", async message => {
         return message.channel.send("Hello!")
     }
 
-    if (message.content === `${prefix}ping`) {
-	message.channel.send("Pong.");
+    if (cmd === `${prefix}ping`) {
+	return message.channel.send("Pong.")
     } 
 	
-    if (message.content === `${prefix}server`) {
-	message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+    if (cmd === `${prefix}server`) {
+	return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`)
     }
 	
-    if (message.content === `${prefix}user-info`) {
-	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+    if (cmd === `${prefix}user`) {
+	return message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`)
     }
 
 	
