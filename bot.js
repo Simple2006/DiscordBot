@@ -45,10 +45,9 @@ bot.on("message", async message => {
         return message.channel.send("Hello!")
     }
 
-    if (message.content === 'ping') {  
-    	message.channel.send(`Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+    if (cmd === `${prefix}ping`) {  
+    	message.channel.send('Pong! (~ ' + client.ping + 'ms)');
     }
-});
     
     // check if the user sending the command has the Admin role, otherwise return
 
