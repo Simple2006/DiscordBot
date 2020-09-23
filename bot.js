@@ -54,7 +54,13 @@ bot.on("message", async message => {
     }
 	
     if(cmd === `${prefix}user`){
-	return message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+	if (!message.mentions.users.size) {
+	return message.reply('you need to tag a user in order to kick them!');
+	}
+	    
+	const taggedUser = message.mentions.users.first();
+	    
+	return message.channel.send(`Username: ${taggedUser.username}\n ID: ${taggedUser.id}`);
     }
 
 	
