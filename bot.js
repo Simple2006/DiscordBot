@@ -84,6 +84,43 @@ bot.on("message", async message => {
 	}
 	
 }
+	
+    if(cmd === `${prefix}deca`) {
+	const amount = parseInt(args[0]);
+
+	if(isNaN(amount)){
+		return message.reply('that doesn\'t seem to be a valid number.');
+	}
+	else if(amount < 1){
+		return message.reply('Choose a value above 0');
+	}
+	else if(amount > 1 && amount < 100 ){
+		if(amount % 16 > 0)
+			return message.reply('For the ease of our customer and seller, we sell in sets of 8 or 16. The minimum purchase amount is 16.')
+		return message.reply('Price is $' + amount * 0.25);
+	}
+	else if(amount > 100 && amount < 250){
+		if(amount % 16 > 0)
+			return message.reply('For the ease of our customer and seller, we sell in sets of 8 or 16. The minimum purchase amount is 16.')
+		return message.reply('Price is $' + amount * 0.20);
+	}
+	else if(amount > 250 && amount < 350){
+		if(amount % 16 > 0)
+			return message.reply('For the ease of our customer and seller, we sell in sets of 8 or 16. The minimum purchase amount is 16.')
+		return message.reply('Price is $' + amount * 0.18);
+	}
+	else if(amount > 350 && amount < 500){
+		if(amount % 16 > 0)
+			return message.reply('For the ease of our customer and seller, we sell in sets of 8 or 16. The minimum purchase amount is 16.')
+		return message.reply('Price is $' + amount * 0.16);
+	}
+	else if(amount > 500 && amount < Infinity){
+		if(amount % 16 > 0)
+			return message.reply('For the ease of our customer and seller, we sell in sets of 8 or 16. The minimum purchase amount is 16.')
+		return message.reply('Price is $' + amount * 0.15);
+	}	
+	
+}
 
 	
     
