@@ -569,7 +569,14 @@ bot.on("message", async message => {
        const user = message.mentions.users.first();
        const member = message.guild.member(user);
        member.ban()
-       message.channel.send(member + " was banned!")
+       message.channel.send(member + " was banned! ✅")
+   }
+
+   if(cmd === `${prefix}kick`){
+       const user = message.mentions.users.first();
+       const member = message.guild.member(user);
+       member.kick()
+       message.channel.send(member + " was kicked! ✅")
    }
 	
 })
