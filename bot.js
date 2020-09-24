@@ -565,19 +565,19 @@ bot.on("message", async message => {
         message.channel.send(embed)
 		
 	}
-   if(cmd === `${prefix}ban`){
-       const user = message.mentions.users.first();
-       const member = message.guild.member(user);
-       member.ban()
-       message.channel.send(member + " was banned! ✅")
-   }
+   //if(cmd === `${prefix}ban`){
+     //  const user = message.mentions.users.first();
+       //const member = message.guild.member(user);
+       //member.ban()
+       //message.channel.send(member + " was banned! ✅")
+   //}
 
-   if(cmd === `${prefix}kick`){
-       const user = message.mentions.users.first();
-       const member = message.guild.member(user);
-       member.kick()
-       message.channel.send(member + " was kicked! ✅")
-   }
+   //if(cmd === `${prefix}kick`){
+     //  const user = message.mentions.users.first();
+       //const member = message.guild.member(user);
+       //member.kick()
+       //message.channel.send(member + " was kicked! ✅")
+   //}
 	
 })
 
