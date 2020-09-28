@@ -36,7 +36,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix = process.env.BOT_PREFIX;
+    let prefix = BOT_PREFIX;
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -50,7 +50,7 @@ bot.on("message", async message => {
     } 
 	
     if(cmd === `${prefix}server`){
-	return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+	return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nTotal Autists: 7`);
     }
 	
     if(cmd === `${prefix}info`){
@@ -95,18 +95,28 @@ bot.on("message", async message => {
 		return message.reply('Choose a value above 0');
 	}
 	else if(amount > 1 && amount < 100 ){
+		
+			
 		return message.reply('Price is $' + amount * 0.25);
 	}
 	else if(amount > 100 && amount < 250){
+		
+			
 		return message.reply('Price is $' + amount * 0.20);
 	}
 	else if(amount > 250 && amount < 350){
+		
+			
 		return message.reply('Price is $' + amount * 0.18);
 	}
 	else if(amount > 350 && amount < 500){
+		
+			
 		return message.reply('Price is $' + amount * 0.16);
 	}
 	else if(amount > 500 && amount < Infinity){
+		
+			
 		return message.reply('Price is $' + amount * 0.15);
 	}	
 	
@@ -342,7 +352,7 @@ bot.on("message", async message => {
         .setColor(0x695DCF)
         .setTitle("Purchase Decas & STs")
 	.addField("Additional Info:",
-	"Minimum Purchase of 16 Decas\nBulk Purchases are Subject to Discount")
+		"Minimum Purchase of 16 Decas\nBulk Purchases are Subject to Discount")
         .setThumbnail("https://media2.giphy.com/media/MXjdlNtjfxjxQsevj6/giphy.gif")
         .addField("Price:",
         "Decas: $0.25 ea.\nSTs: $0.25 ea.\n\n**Bulk Purchases are Heavily Discounted**")
@@ -385,7 +395,7 @@ bot.on("message", async message => {
         .setTimestamp()
         message.channel.send(embed)
 		
-    }
+	}
 	
     if(cmd === `${prefix}duping-overview`){
         var embed = new Discord.MessageEmbed()
@@ -395,13 +405,13 @@ bot.on("message", async message => {
         .addField("Our Duper:",
         "<@728448495085682758>, is vouched and finish your orders at the highest proficiency. Charles has been playing RotMG for over 9+ years and has gained MANY vouches in a short amount of time.\n You will not go wrong when buying from him!")
         .addField("In this service:",
-	"One UT Double means that your characters inventory will be doubled. We highly advise putting 8 items in the inventory to maximize the value for money.")
+		"One UT Double means that your characters inventory will be doubled. We highly advise putting 8 items in the inventory to maximize the value for money.")
 	.setDescription("Information about our Doubling Service")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
 		
-    }
+	}
 	
     if(cmd === `${prefix}duping`){
         var embed = new Discord.MessageEmbed()
@@ -416,7 +426,7 @@ bot.on("message", async message => {
         .setTimestamp()
         message.channel.send(embed)
 	
-    }
+	}
 		
     if(cmd === `${prefix}vaultslot`){
         var embed = new Discord.MessageEmbed()
@@ -428,13 +438,13 @@ bot.on("message", async message => {
         .addField("Additional Info:",
         "Must purchase at least 24 vault and char slots combined.")
 	.addField("Pricing:",
-	"0 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.")
+		"0 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.")
         .setDescription("Purchase the cheapest vaults and slots")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
 		
-    }
+	}
 	
     if(cmd === `${prefix}runes`){
         var embed = new Discord.MessageEmbed()
@@ -459,7 +469,7 @@ bot.on("message", async message => {
         .addField("Additional Info:",
         "If you would like to discuss pricing for bringing your pet to a certain level or rarity, start a ticket.")
 	.addField("Pricing:",
-	"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
+		"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Pet Food")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -474,7 +484,7 @@ bot.on("message", async message => {
         "Must have At least one Quest Chest or ST token/chest!")
         .setThumbnail("https://i.imgur.com/KOHUjk0.png")
 	.addField("Pricing:",
-	"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
+		"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Quest Chest & ST Chest Doubles")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -493,7 +503,7 @@ bot.on("message", async message => {
         .setTimestamp()
         message.channel.send(embed)
 	
-    }
+	}
 	
     if(cmd === `${prefix}accounts`){
         var embed = new Discord.MessageEmbed()
@@ -508,7 +518,7 @@ bot.on("message", async message => {
         .setTimestamp()
         message.channel.send(embed)
 	
-    }
+	}
 	
     if(cmd === `${prefix}star`){
         var embed = new Discord.MessageEmbed()
@@ -523,7 +533,7 @@ bot.on("message", async message => {
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
-    }
+	}
 	
     if(cmd === `${prefix}roulette`){
         var embed = new Discord.MessageEmbed()
@@ -555,6 +565,26 @@ bot.on("message", async message => {
         message.channel.send(embed)
 		
 	}
+   if(cmd === `${prefix}ban`){
+       const user = message.mentions.users.first();
+       if(isNaN(user)){
+           return message.channel.send("Please specify a user to ban!")
+       }
+       const member = message.guild.member(user);
+       member.ban()
+       message.channel.send(member + " was banned! ✅")
+   }
+
+   if(cmd === `${prefix}kick`){
+       const user = message.mentions.users.first();
+       if(isNaN(user)){
+        return message.channel.send("Please specify a user to kick!")
+    }
+       const member = message.guild.member(user);
+       member.kick()
+       message.channel.send(member + " was kicked! ✅")
+   }
+	
 })
 
-bot.login(process.env.BOT_TOKEN)
+bot.login(BOT_TOKEN)
