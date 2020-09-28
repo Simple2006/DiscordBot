@@ -36,7 +36,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix = BOT_PREFIX;
+    let prefix = process.env.BOT_PREFIX;
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -587,4 +587,4 @@ bot.on("message", async message => {
 	
 })
 
-bot.login(BOT_TOKEN)
+bot.login(process.env.BOT_TOKEN)
