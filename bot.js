@@ -199,9 +199,9 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\n1x Rare Pet + Meet Wonderland or PubHalls's stat and equipment requirements.")
         .addField("Cult/Marble Collosus only runs:",
-        "1-8 Runs: $0.80 ea.\n9-16 Runs: $0.70 ea.\n17-23 Runs: $0.60 ea.\n24+ Runs: $0.50 ea.")
+        "1-8 Runs: $0.90 ea.\n9-16 Runs: $0.80 ea.\n17-23 Runs: $0.70 ea.\n24+ Runs: $0.60 ea.")
         .addField("Void runs:",
-        "1-8 Runs: $0.95 ea.\n9-16 Runs: $0.90 ea.\n16+ Runs: $0.85 ea.")
+        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.90 ea.\n16+ Runs: $0.85 ea.")
         .setDescription("Purchase the cheapest Lost Halls runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -494,17 +494,19 @@ bot.on("message", async message => {
     if(cmd === `${prefix}misc`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
-        .setTitle("Miscellaneous Doubling")
+        .setTitle("Keys/Shards/Clovers/Etc. Doubling")
 	.setThumbnail("https://i.imgur.com/efX1IUQ.png")
-        .addField("About:",
-        "We can double anything that you need! If you need something doubled that we don't list e.g Shards, Tokens, Etc., Start a ticket!")
-        .setDescription("Need something we don't list doubled? Start a ticket!")
+        .addField("Keys/Shards/Clovers:",
+        "$0.625 ea.")
+        .addField("Other Items:",
+        "Start a ticket to discuss pricing!")
+        .setDescription("Start a ticket!")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
 	
-	}
-	
+    }
+    
     if(cmd === `${prefix}accounts`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
