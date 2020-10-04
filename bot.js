@@ -36,7 +36,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix = process.env.BOT_PREFIX;
+    let prefix = process.env.BOT_PREFIX
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -555,7 +555,9 @@ bot.on("message", async message => {
         .setColor(0x695DCF)
         .setTitle("Keyper Farming")
         .addField("Requirements:",
-        "None")
+        "6/8 Trickster + Rare Pet")
+        .addField("Discounts:",
+        "8/8 Trickster + Divine Pet With Magic Heal")
         .setThumbnail("https://i.imgur.com/LYrS2iC.png")
         .addField("Run includes:",
         "Killing the Keyper and collecting white bags, specified items and shards")
