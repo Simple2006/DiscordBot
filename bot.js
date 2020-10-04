@@ -128,10 +128,10 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/B4LMAPa.png")
         .addField("NexusMart:",
         "Prefix: nm!\nLanguage: English")
-        .addField("👷 Admin:",
-        "\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n\n**Shop:**\nnm!deca-shop\nm!keyper\nm!skin-shop\nm!maxing-service\nnm!event-farming\n\n**Dungeons:**\nnm!losthalls\nnm!oryx3-running\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite-running\nnm!thicket\nMore Unreleased!")
-        .addField("❤️ Everyone:",
-        "\n**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nm!info *member*\nnm!hello\nnm!ping")
+        .addField("👷 Admin:\n",
+        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n\n**Shop:**\nnm!deca-shop\nm!keyper-running\nm!skin-shop\nm!maxing-service\nnm!event-farming\nMore Unreleased\n\n**Dungeons:**\nm!dungeon-running-overview\nnnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
+        .addField("❤️ Everyone:\n",
+        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nm!info *member*\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -256,7 +256,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 
-    if(cmd === `${prefix}parasite-running`){
+    if(cmd === `${prefix}parasite`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Parasite Running")
@@ -384,7 +384,7 @@ bot.on("message", async message => {
         .setTitle("Dungeon Running")
         .setThumbnail("https://i.imgur.com/zNLAaQU.png")
         .addField("Our runners:",
-        "<@182858619451080704> <@327555672193368075>")
+        "<@182858619451080704> <@327555672193368075> <@266209589941370880> <@196118902512680960> ")
         .addField("Proof:",
         "To prove the dungeon runner has done the runs, they can pick up the mark or take screenshots of completion. You may discuss more with them")
         .addField("Our runners:",
@@ -395,7 +395,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 	
-    if(cmd === `${prefix}oryx3-running`){
+    if(cmd === `${prefix}oryx3`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Oryx 3 Running")
@@ -566,7 +566,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 	
-    if(cmd === `${prefix}keyper`){
+    if(cmd === `${prefix}keyper-running`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Keyper Farming")
