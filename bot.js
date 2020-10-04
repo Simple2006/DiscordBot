@@ -438,7 +438,7 @@ bot.on("message", async message => {
         .addField("Additional Info:",
         "Must purchase at least 24 vault and char slots combined.")
 	.addField("Pricing:",
-		"0 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.")
+		"24 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.")
         .setDescription("Purchase the cheapest vaults and slots")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -452,7 +452,7 @@ bot.on("message", async message => {
         .setTitle("Oryx 3 Rune Doubling")
 	.setThumbnail("https://i.imgur.com/uPLEGcD.png")
         .addField("Pricing:",
-        "0 - 24 : $2.00 ea.\n24 - 64 : $1.50 ea.\n64+ : $1.25 ea.")
+        "24 - 64 : $1.50 ea.\n64+ : $1.25 ea.")
         .setDescription("Need Oryx 3 Runes doubled? Start a ticket!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -469,7 +469,7 @@ bot.on("message", async message => {
         .addField("Additional Info:",
         "If you would like to discuss pricing for bringing your pet to a certain level or rarity, start a ticket.")
 	.addField("Pricing:",
-		"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
+		"24 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Pet Food")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -484,7 +484,7 @@ bot.on("message", async message => {
         "Must have At least one Quest Chest or ST token/chest!")
         .setThumbnail("https://i.imgur.com/KOHUjk0.png")
 	.addField("Pricing:",
-		"0 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
+		"24 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Quest Chest & ST Chest Doubles")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -497,7 +497,7 @@ bot.on("message", async message => {
         .setTitle("Keys/Shards/Clovers/Etc. Doubling")
 	.setThumbnail("https://i.imgur.com/efX1IUQ.png")
         .addField("Keys/Shards/Clovers:",
-        "$0.625 ea.")
+        "24+ : $0.625 ea.")
         .addField("Other Items:",
         "Start a ticket to discuss pricing!")
         .setDescription("Start a ticket!")
