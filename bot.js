@@ -129,9 +129,9 @@ bot.on("message", async message => {
         .addField("NexusMart:",
         "Prefix: nm!\nLanguage: English")
         .addField("👷 Admin:",
-        "**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n\n**Shop:**\nnm!deca-shop\nm!keyper\nm!skin-shop\nm!maxing-service\nnm!event-farming\n\n**Dungeons:**\nnm!losthalls\nnm!oryx3-running\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite-running\nnm!thicket\More Unreleased!")
+        "\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n\n**Shop:**\nnm!deca-shop\nm!keyper\nm!skin-shop\nm!maxing-service\nnm!event-farming\n\n**Dungeons:**\nnm!losthalls\nnm!oryx3-running\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite-running\nnm!thicket\nMore Unreleased!")
         .addField("❤️ Everyone:",
-        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nm!info *member*\nnm!hello\nnm!ping")
+        "\n**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nm!info *member*\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
