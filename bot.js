@@ -150,8 +150,6 @@ bot.on("message", async message => {
 	
     
     // check if the user sending the command has the Admin role, otherwise return
-
-    const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
 
     if(cmd === `${prefix}thicket`){
