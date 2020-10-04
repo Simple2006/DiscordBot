@@ -121,6 +121,22 @@ bot.on("message", async message => {
 	}	
 	
 }
+    if(cmd === `${prefix}help`) {
+        var embed = new Discord.MessageEmbed()
+        .setColor(0x695DCF)
+        .setTitle("Help Panel")
+        .setThumbnail("https://i.imgur.com/B4LMAPa.png")
+        .addField("NexusMart:",
+        "Prefix: nm!\nLanguage: English")
+        .addField("👷 Admin:",
+        "**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n**Shop:**\nnm!deca-shop\nm!keyper\nm!skin-shop\nm!maxing-service\nnm!event-farming\n**Dungeons:**\nnm!losthalls\nnm!oryx3-running\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite-running\nnm!thicket\More Unreleased!")
+        .addField("Full 3-Boss Run:",
+        "1-8 Runs: $0.85 ea.\n9-16 Runs: $0.80 ea.\n17-31 Runs: $0.75 ea.\n32+ Runs: $0.70 ea.")
+        .setDescription("Purchase the cheapest thicket runs!")
+        .setFooter("NexusMart")
+        .setTimestamp()
+        message.channel.send(embed)
+    }	
 
 	
     
@@ -347,7 +363,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
     }
 
-    if(cmd === `${prefix}decas-st-shop`){
+    if(cmd === `${prefix}deca-shop`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Purchase Decas & STs")
@@ -438,7 +454,7 @@ bot.on("message", async message => {
         .addField("Additional Info:",
         "Must purchase at least 24 vault and char slots combined.")
 	.addField("Pricing:",
-		"24 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.")
+		"24 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.\n**10% OFF IF ALL VAULTS UNLOCKED!**")
         .setDescription("Purchase the cheapest vaults and slots")
         .setFooter("NexusMart")
         .setTimestamp()
