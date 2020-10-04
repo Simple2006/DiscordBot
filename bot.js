@@ -45,7 +45,7 @@ bot.on("message", async message => {
     
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) {
         if (message.channel.id !== "721150277247565877") {
-            message.reply("Please send the command in Bot Commands!");
+            message.reply("Please send the command in <#721150277247565877>");
             return;
         }
     }
