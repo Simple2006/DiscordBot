@@ -130,9 +130,9 @@ bot.on("message", async message => {
         "Prefix: nm!\nLanguage: English")
         .addField("👷 Admin:",
         "**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n**Shop:**\nnm!deca-shop\nm!keyper\nm!skin-shop\nm!maxing-service\nnm!event-farming\n**Dungeons:**\nnm!losthalls\nnm!oryx3-running\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite-running\nnm!thicket\More Unreleased!")
-        .addField("Full 3-Boss Run:",
-        "1-8 Runs: $0.85 ea.\n9-16 Runs: $0.80 ea.\n17-31 Runs: $0.75 ea.\n32+ Runs: $0.70 ea.")
-        .setDescription("Purchase the cheapest thicket runs!")
+        .addField("❤️ Everyone:",
+        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nm!info *member*\nnm!hello\nnm!ping")
+        .setDescription("Help Panel for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
