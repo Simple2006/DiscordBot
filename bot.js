@@ -390,7 +390,7 @@ bot.on("message", async message => {
         .setTitle("Dungeon Running")
         .setThumbnail("https://i.imgur.com/zNLAaQU.png")
         .addField("Our runners:",
-        "<@182858619451080704> <@327555672193368075> <@266209589941370880> <@196118902512680960> ")
+        "<@182858619451080704> <@327555672193368075> <@266209589941370880> <@196118902512680960> <@327498806478503936>")
         .addField("Proof:",
         "To prove the dungeon runner has done the runs, they can pick up the mark or take screenshots of completion. You may discuss more with them")
         .addField("Our runners:",
