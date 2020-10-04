@@ -45,7 +45,7 @@ bot.on("message", async message => {
     
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) {
         if (message.channel.id !== "721150277247565877") {
-            message.reply('Please send the command in <#721150277247565877>');
+            message.reply("Please send the command in Bot Commands!");
             return;
         }
     }
@@ -151,8 +151,8 @@ bot.on("message", async message => {
     
     // check if the user sending the command has the Admin role, otherwise return
 
-	const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
-	if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
+    const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
 
     if(cmd === `${prefix}thicket`){
         var embed = new Discord.MessageEmbed()
