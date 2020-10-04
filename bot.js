@@ -41,6 +41,12 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
+    const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
+    
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) {
+        if (message.channel.id !== "721150277247565877") return;
+    }
+
     if(cmd === `${prefix}hello`){
         return message.channel.send("Hello!")
     }
