@@ -137,7 +137,7 @@ bot.on("message", async message => {
         .addField("NexusMart:",
         "Prefix: nm!\nLanguage: English")
         .addField("👷 Admin:\n",
-        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n\n**Shop:**\nnm!deca-shop\nm!keyper-running\nm!skin-shop\nm!maxing-service\nnm!event-farming\nMore Unreleased\n\n**Dungeons:**\nm!dungeon-running-overview\nnnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
+        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nm!misc\n\n**Shop:**\nnm!deca-shop\nm!keyper-running\nm!skin-shop\nm!maxing-service\nnm!event-farming\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
         .addField("❤️ Everyone:\n",
         "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nm!info *member*\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
