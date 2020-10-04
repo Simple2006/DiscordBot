@@ -44,7 +44,7 @@ bot.on("message", async message => {
     const memberId = global.guild.members.cache.find(member => member.user.id == message.author.id);
     
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) {
-        if (message.channel.id !== "721150277247565877" && message.content[0] === prefix) {
+        if (message.channel.id !== "721150277247565877" && message.content === "nm!") {
             message.reply("Please send the command in <#721150277247565877>");
             return;
         }
