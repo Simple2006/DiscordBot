@@ -609,7 +609,7 @@ bot.on("message", async message => {
         "Level 0 -> Level 1 (5 Completes) : $4.50\nLevel 1 -> Level 2 (10 Completes) : $8.50\nLevel 2 -> Level 3 (15 Completes) : $12.75\nLevel 3 -> Level 4 (20 Completes) : $15.00\nLevel 4 -> Level 5 (25 Completes) : $16.25")
         .addField("**DOUBLE VALUE**\n[MBC + Void] Defense + Mana Exaltations: ",
         "Level 0 -> Level 1 (5 Completes) : $4.50\nLevel 1 -> Level 2 (10 Completes) : $8.50\nLevel 2 -> Level 3 (15 Completes) : $12.75\nLevel 3 -> Level 4 (20 Completes) : $15.00\nLevel 4 -> Level 5 (25 Completes) : $16.25")        
-        .addField("**DOUBLE VALUE!**\n[Fungal + Crystal] Wisdom + Vitality Exaltations: ",
+        .addField("**DOUBLE VALUE**\n[Fungal + Crystal] Wisdom + Vitality Exaltations: ",
         "Level 0 -> Level 1 (5 Completes) : $4.75\nLevel 1 -> Level 2 (10 Completes) : $9.00\nLevel 2 -> Level 3 (15 Completes) : $13.50\nLevel 3 -> Level 4 (20 Completes) : $17.00\nLevel 4 -> Level 5 (25 Completes) : $21.25")        
         .addField("[Oryx3] Life Exaltations: ",
         "Level 0 -> Level 1 (5 Completes) : $25.00\nLevel 1 -> Level 2 (10 Completes) : $48.00\nLevel 2 -> Level 3 (15 Completes) : $72.00\nLevel 3 -> Level 4 (20 Completes) : $95.00\nLevel 4 -> Level 5 (25 Completes) : $112.00")
