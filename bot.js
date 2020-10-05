@@ -159,9 +159,9 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\nRare Pet and 2/8 Char. (Reqs change based on runner)")
         .addField("First Boss Only runs (Tenne):",
-        "1-8 Runs: $0.75 ea.\n9-16 Runs: $0.70 ea.\n17-31 Runs: $0.65 ea.\n32+ Runs: $0.60 ea.")
-        .addField("Full 3-Boss Run:",
         "1-8 Runs: $0.85 ea.\n9-16 Runs: $0.80 ea.\n17-31 Runs: $0.75 ea.\n32+ Runs: $0.70 ea.")
+        .addField("Full 3-Boss Run:",
+        "1-8 Runs: $0.90 ea.\n9-16 Runs: $0.85 ea.\n17-31 Runs: $0.80 ea.\n32+ Runs: $0.75 ea.")
         .setDescription("Purchase the cheapest thicket runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -176,7 +176,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\n1x Rare Pet and 4/8 Char. (Reqs change based on runner)")
         .addField("Full Nest runs:",
-        "1-8 Runs: $0.70 ea.\n9-16 Runs: $0.65 ea.\n17+ Runs: $0.60 ea.")
+        "1-8 Runs: $0.85 ea.\n9-16 Runs: $0.80 ea.\n17+ Runs: $0.75 ea.")
         .setDescription("Purchase the cheapest nest runs! (Maximum 20 per purchase)")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -191,7 +191,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\nMeet the Fungal Discord requirements.")
         .addField("Full Fungal runs:",
-        "1-8 Runs: $0.95 ea.\n9-16 Runs: $0.90 ea.\n17-31 Runs: $0.85 ea.\n32+ Runs: $0.80 ea.")
+        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.95 ea.\n17-31 Runs: $0.90 ea.\n32+ Runs: $0.85 ea.")
         .setDescription("Purchase the cheapest fungal runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -206,7 +206,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\nMeet Shatters' Discord requirements.")
         .addField("Full Shatters runs:",
-        "1-8 Runs: $0.85 ea.\n9-16 Runs: $0.80 ea.\n17-31 Runs: $0.70 ea.\n32+ Runs: $0.65 ea.")
+        "1-8 Runs: $0.90 ea.\n9-16 Runs: $0.85 ea.\n17-31 Runs: $0.80 ea.\n32+ Runs: $0.75 ea.")
         .setDescription("Purchase the cheapest shatters runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -221,9 +221,9 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\n1x Rare Pet + Meet Wonderland or PubHalls's stat and equipment requirements.")
         .addField("Cult/Marble Collosus only runs:",
-        "1-8 Runs: $0.90 ea.\n9-16 Runs: $0.80 ea.\n17-23 Runs: $0.70 ea.\n24+ Runs: $0.60 ea.")
+        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.90 ea.\n17-23 Runs: $0.80 ea.\n24+ Runs: $0.70 ea.")
         .addField("Void runs:",
-        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.90 ea.\n16+ Runs: $0.85 ea.")
+        "1-8 Runs: $1.05 ea.\n9-16 Runs: $0.95 ea.\n16+ Runs: $0.90 ea.")
         .setDescription("Purchase the cheapest Lost Halls runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -270,7 +270,7 @@ bot.on("message", async message => {
         "\nRare Pet")
         .setThumbnail("https://i.imgur.com/zodPEFO.png")
         .addField("Full Parasite run:",
-        "1-8 Runs: $0.65 ea.\n9-16 Runs: $0.60 ea.\n17-23 Runs: $0.55 ea.\n24-32 Runs: $0.50 ea.")
+        "1-8 Runs: $0.80 ea.\n9-16 Runs: $0.75 ea.\n17-23 Runs: $0.70 ea.\n24-32 Runs: $0.65 ea.")
         .setDescription("Purchase the cheapest parasite runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -600,11 +600,17 @@ bot.on("message", async message => {
         "Rare Pet")
         .setThumbnail("https://i.imgur.com/lFTryT6.jpg")
         .addField("Run includes:",
-        "Farming the desired level of Exaltation")
-        .addField("[Shatters | Nest | Cult] Att/Dex/Spd Exaltations:",
-        "Level 0 --> Level 1 (5 Completes) : $4.50\nLevel 1 --> Level 2 (10 Completes) : $8.50\nLevel 2 --> Level 3 (15 Completes) : $12.50\nLevel 3 --> Level 4 (20 Completes) : $16.00\nLevel 4 --> Level 5 (25 Completes) : $20.00")
-        .addField("[MBC + Void | Fungal + Crystal] Wis/Vit/Def/Mana Exaltations:",
-        "Level 0 --> Level 1 (5 Completes) : $5.00\nLevel 1 --> Level 2 (10 Completes) : $10.00\nLevel 2 --> Level 3 (15 Completes) : $15.00\nLevel 3 --> Level 4 (20 Completes) : $20.00\nLevel 4 --> Level 5 (25 Completes) : $25.00")        
+        "Farming the desired level of Exaltation + Collecting all loot from dungeons")
+        .addField("[Shatters] Attack Exaltation:",
+        "Level 0 --> Level 1 (5 Completes) : $4.25\nLevel 1 --> Level 2 (10 Completes) : $8.00\nLevel 2 --> Level 3 (15 Completes) : $12.00\nLevel 3 --> Level 4 (20 Completes) : $14.00\nLevel 4 --> Level 5 (25 Completes) : $17.50")
+        .addField("[Nest] Dexterity Exaltation:",
+        "Level 0 --> Level 1 (5 Completes) : $4.00\nLevel 1 --> Level 2 (10 Completes) : $7.50\nLevel 2 --> Level 3 (15 Completes) : $10.50\nLevel 3 --> Level 4 (20 Completes) : $14.00\nLevel 4 --> Level 5 (25 Completes) : $17.50")        
+        .addField("[Cult] Speed Exaltations: ",
+        "Level 0 --> Level 1 (5 Completes) : $4.50\nLevel 1 --> Level 2 (10 Completes) : $8.50\nLevel 2 --> Level 3 (15 Completes) : $12.75\nLevel 3 --> Level 4 (20 Completes) : $15.00\nLevel 4 --> Level 5 (25 Completes) : $16.25")
+        .addField("**DOUBLE VALUE**\n[MBC + Void] Defense + Mana Exaltations: ",
+        "Level 0 --> Level 1 (5 Completes) : $4.50\nLevel 1 --> Level 2 (10 Completes) : $8.50\nLevel 2 --> Level 3 (15 Completes) : $12.75\nLevel 3 --> Level 4 (20 Completes) : $15.00\nLevel 4 --> Level 5 (25 Completes) : $16.25")        
+        .addField("**DOUBLE VALUE!**\n[Fungal + Crystal] Wisdom + Vitality Exaltations: ",
+        "Level 0 --> Level 1 (5 Completes) : $4.75\nLevel 1 --> Level 2 (10 Completes) : $9.00\nLevel 2 --> Level 3 (15 Completes) : $13.50\nLevel 3 --> Level 4 (20 Completes) : $17.00\nLevel 4 --> Level 5 (25 Completes) : $21.25")        
         .addField("[Oryx3] Life Exaltations: ",
         "Level 0 --> Level 1 (5 Completes) : $25.00\nLevel 1 --> Level 2 (10 Completes) : $48.00\nLevel 2 --> Level 3 (15 Completes) : $72.00\nLevel 3 --> Level 4 (20 Completes) : $95.00\nLevel 4 --> Level 5 (25 Completes) : $112.00")
         .setDescription("Purchase the cheapest Exaltation Farming!")
