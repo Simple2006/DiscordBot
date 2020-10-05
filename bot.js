@@ -606,7 +606,7 @@ bot.on("message", async message => {
         .addField("[MBC + Void | Fungal + Crystal] Wis/Vit/Def/Mana Exaltations:",
         "Level 0 --> Level 1 (5 Completes) : $8.00\nLevel 1 --> Level 2 (10 Completes) : $15.00\nLevel 2 --> Level 3 (15 Completes) : $22.00\nLevel 3 --> Level 4 (20 Completes) : $28.00\nLevel 4 --> Level 5 (25 Completes) : $35.00")        
         .addField("[Oryx3] Life Exaltations: ",
-        "Level 0 --> Level 1 (5 Completes) : $25.00\nLevel 1 --> Level 2 (10 Completes) : $50.00\nLevel 2 --> Level 3 (15 Completes) : $75.00\nLevel 3 --> Level 4 (20 Completes) : $100.00\nLevel 4 --> Level 5 (25 Completes) : $125.00")
+        "Level 0 --> Level 1 (5 Completes) : $25.00\nLevel 1 --> Level 2 (10 Completes) : $48.00\nLevel 2 --> Level 3 (15 Completes) : $72.00\nLevel 3 --> Level 4 (20 Completes) : $95.00\nLevel 4 --> Level 5 (25 Completes) : $112.00")
         .setDescription("Purchase the cheapest Exaltation Farming!")
         .setFooter("NexusMart")
         .setTimestamp()
