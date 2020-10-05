@@ -58,7 +58,7 @@ bot.on("message", async message => {
     } 
 	
     if(cmd === `${prefix}server`){
-	return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nTotal Autists: 7`);
+	return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nTotal Autists: 9`);
     }
 	
     if(cmd === `${prefix}info`){
