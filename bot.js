@@ -220,7 +220,7 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/kbzthE4.png")
         .addField("Requirements:",
         "\n1x Rare Pet + Meet Wonderland or PubHalls's stat and equipment requirements.")
-        .addField("Cult/Marble Collosus only runs:",
+        .addField("Cult/Marble Colossus only runs:",
         "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.90 ea.\n17-23 Runs: $0.80 ea.\n24+ Runs: $0.70 ea.")
         .addField("Void runs:",
         "1-8 Runs: $1.05 ea.\n9-16 Runs: $0.95 ea.\n16+ Runs: $0.90 ea.")
