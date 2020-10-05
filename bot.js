@@ -137,7 +137,7 @@ bot.on("message", async message => {
         .addField("NexusMart:",
         "Prefix: nm!\nLanguage: English")
         .addField("👷 Admin:\n",
-        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nnm!misc\n\n**Shop:**\nnm!deca-shop\nnm!keyper-running\nnm!skin-shop\nnm!maxing-service\nnm!event-farming\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
+        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nnm!misc\n\n**Shop:**\nnm!deca-shop\nnm!keyper-running\nnm!skin-shop\nnm!maxing-service\nnm!event-farming\nnm!exaltation\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
         .addField("❤️ Everyone:\n",
         "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nnm!info *member*\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
@@ -591,6 +591,29 @@ bot.on("message", async message => {
         message.channel.send(embed)
 		
 	}
+	
+    if(cmd === `${prefix}exaltation`){
+        var embed = new Discord.MessageEmbed()
+        .setColor(0x695DCF)
+        .setTitle("Exaltation Completion Service")
+        .addField("Requirements:",
+        "Rare Pet")
+        .setThumbnail("https://i.imgur.com/lFTryT6.jpg")
+        .addField("Run includes:",
+        "Farming the desired level of Exaltation")
+        .addField("[Shatters | Nest | Cult] Att/Dex/Spd Exaltations:",
+        "Level 0 --> Level 1 (5 Completes) : $4.50\nLevel 1 --> Level 2 (10 Completes) : $8.50\nLevel 2 --> Level 3 (15 Completes) : $12.50\nLevel 3 --> Level 4 (20 Completes) : $16.00\nLevel 4 --> Level 5 (25 Completes) : $20.00")
+        .addField("[MBC + Void | Fungal + Crystal] Wis/Vit/Def/Mana Exaltations:",
+        "Level 0 --> Level 1 (5 Completes) : $8.00\nLevel 1 --> Level 2 (10 Completes) : $15.00\nLevel 2 --> Level 3 (15 Completes) : $22.00\nLevel 3 --> Level 4 (20 Completes) : $28.00\nLevel 4 --> Level 5 (25 Completes) : $35.00")        
+        .addField("[Oryx3] Life Exaltations: ",
+        "Level 0 --> Level 1 (5 Completes) : $25.00\nLevel 1 --> Level 2 (10 Completes) : $50.00\nLevel 2 --> Level 3 (15 Completes) : $75.00\nLevel 3 --> Level 4 (20 Completes) : $100.00\nLevel 4 --> Level 5 (25 Completes) : $125.00")
+        .setDescription("Purchase the cheapest Exaltation Farming!")
+        .setFooter("NexusMart")
+        .setTimestamp()
+        message.channel.send(embed)
+		
+    }
+	
    if(cmd === `${prefix}ban`){
        const user = message.mentions.users.first();
        if(isNaN(user)){
