@@ -604,7 +604,7 @@ bot.on("message", async message => {
         .addField("[Shatters | Nest | Cult] Att/Dex/Spd Exaltations:",
         "Level 0 --> Level 1 (5 Completes) : $4.50\nLevel 1 --> Level 2 (10 Completes) : $8.50\nLevel 2 --> Level 3 (15 Completes) : $12.50\nLevel 3 --> Level 4 (20 Completes) : $16.00\nLevel 4 --> Level 5 (25 Completes) : $20.00")
         .addField("[MBC + Void | Fungal + Crystal] Wis/Vit/Def/Mana Exaltations:",
-        "Level 0 --> Level 1 (5 Completes) : $8.00\nLevel 1 --> Level 2 (10 Completes) : $15.00\nLevel 2 --> Level 3 (15 Completes) : $22.00\nLevel 3 --> Level 4 (20 Completes) : $28.00\nLevel 4 --> Level 5 (25 Completes) : $35.00")        
+        "Level 0 --> Level 1 (5 Completes) : $5.00\nLevel 1 --> Level 2 (10 Completes) : $10.00\nLevel 2 --> Level 3 (15 Completes) : $15.00\nLevel 3 --> Level 4 (20 Completes) : $20.00\nLevel 4 --> Level 5 (25 Completes) : $25.00")        
         .addField("[Oryx3] Life Exaltations: ",
         "Level 0 --> Level 1 (5 Completes) : $25.00\nLevel 1 --> Level 2 (10 Completes) : $48.00\nLevel 2 --> Level 3 (15 Completes) : $72.00\nLevel 3 --> Level 4 (20 Completes) : $95.00\nLevel 4 --> Level 5 (25 Completes) : $112.00")
         .setDescription("Purchase the cheapest Exaltation Farming!")
