@@ -583,8 +583,8 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/LYrS2iC.png")
         .addField("Run includes:",
         "Killing the Keyper and collecting white bags, specified items and shards")
-        .addField("Keyper Runs:",
-        "0 - 200 : 0.70 Ea.\n200+ : 0.60 Ea.\n\n**CHEAPEST ON MARKET**")
+        .addField("Keyper Pricing:",
+        "0 - 50 : 0.70 Ea. ⬅️\n50+ : 0.60 Ea. ⬅️\n\n**CHEAPEST ON MARKET**")
         .setDescription("Purchase the cheapest Keyper Runs!")
         .setFooter("NexusMart")
         .setTimestamp()
