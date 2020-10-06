@@ -299,15 +299,13 @@ bot.on("message", async message => {
         .setColor(0x695DCF)
         .setTitle("Terms of Service")
         .addField("Paypal:",
-        "ALL purchases are made through PayPal Friends and Family. This is to prevent charge backs, a common method used to scam companies/sellers to get free goods/services. Your goods WILL be delivered. In the rare occurrence of an accidental purchase etc., a refund will be issued.")
+        "All purchases are made through PayPal Friends and Family. This is to prevent charge backs, a common method used to scam companies/sellers to get free goods/services. Your goods will always be delivered safely and timely. In the rare occurrance of an accidental purchase etc., a refund will be issued.")
         .setThumbnail("https://static.drips.pw/rotmg/wiki/Environment/Containers/Loot%20Bag%207.png")
         .addField("Fraud/Scam Prevention:",
-        "Please DO NOT do business with anyone outside of our server impersonating us. Always double check if the seller is who you think it is! If you have any evidence regarding fraudulent transactions (such as hacked accounts), please report it to an admin or moderator so we can make an announcement with the perpetrators name. **WE ARE NOT RESPONSIBLE FOR CONSEQUENCES THAT MAY OCCUR IF YOU DO NOT REPORT THE SUSPICIOUS ACTIVITY.**")
-        .addField("Content:",
-        "We DO NOT allow NSFW of any sort for now. An NSFW channel may be introduced in the future. Please keep your gore and other inappropriate things to yourself. This is your only warning! Toxicity is completely allowed as long as it does not go too far.")
+        "Please DO NOT do business with anyone outside of our server. Always double check the seller's vouches and identity! If you have any evidence regarding fraudulent transactions (such as hacked accounts), please report it to an admin or moderator so we can make an announcement with the perpetrators name.\n**WE ARE NOT RESPONSIBLE FOR CONSEQUENCES THAT MAY OCCUR IF YOU DO NOT REPORT THE SUSPICIOUS ACTIVITY.**")
         .addField("More Info:",
         "If you feel that NexusMart is unsafe at any point, feel free to contact staff to have your issue cleared up. If misconduct isn't reported to us immediately, we are not responsible! If you wish to report any misconduct, please open a support ticket! All support tickets are saved and your input will be taken into consideration. We do not condone selling/promoting hacks or cheats. Bringing up topics such as these will result in consequences.")
-        .setDescription("The Terms of Service for the NexusMart server")
+        .setDescription("The Terms of Service for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
