@@ -206,7 +206,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\nMeet Shatters' Discord requirements.")
         .addField("Full Shatters runs:",
-        "1-8 Runs: $0.95 ea.\n9-16 Runs: $0.90 ea.\n17+ Runs: $0.85 ea.")
+        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.95 ea.\n17+ Runs: $0.90 ea.")
         .setDescription("Purchase the cheapest shatters runs!")
         .setFooter("NexusMart")
         .setTimestamp()
