@@ -191,7 +191,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\nMeet the Fungal Discord requirements.")
         .addField("Full Fungal runs:",
-        "1-8 Runs: $1.05 ea.\n9-16 Runs: $0.95 ea.\n17+ Runs: $0.90 ea.")
+        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.95 ea.\n17+ Runs: $0.90 ea.")
         .setDescription("Purchase the cheapest fungal runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -206,7 +206,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\nMeet Shatters' Discord requirements.")
         .addField("Full Shatters runs:",
-        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.95 ea.\n17+ Runs: $0.90 ea.")
+        "1-8 Runs: $0.95 ea.\n9-16 Runs: $0.90 ea.\n17+ Runs: $0.85 ea.")
         .setDescription("Purchase the cheapest shatters runs!")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -221,9 +221,9 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "\n1x Rare Pet + Meet Wonderland or PubHalls's stat and equipment requirements.")
         .addField("Cult/Marble Colossus only runs:",
-        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.95 ea.\n17-23 Runs: $0.90 ea.\n24+ Runs: $0.85 ea.")
+        "1-8 Runs: $1.00 ea.\n9-16 Runs: $0.90 ea.\n17+ Runs: $0.80 ea.")
         .addField("Void runs:",
-        "1-8 Runs: $1.05 ea.\n9-16 Runs: $0.95 ea.\n17+ Runs: $0.90 ea.")
+        "1-8 Runs: $1.05 ea.\n9-16 Runs: $1.00 ea.\n17+ Runs: $0.95 ea.")
         .setDescription("Purchase the cheapest Lost Halls runs!")
         .setFooter("NexusMart")
         .setTimestamp()
