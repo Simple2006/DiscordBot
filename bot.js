@@ -600,17 +600,17 @@ bot.on("message", async message => {
         .addField("Run includes:",
         "Farming the desired level of Exaltation + Collecting all loot from dungeons")
         .addField("[Shatters] Attack Exaltation:",
-        "Level 0 -> Level 1 (5 Completes) : $4.50\nLevel 1 -> Level 2 (10 Completes) : $9.00\nLevel 2 -> Level 3 (15 Completes) : $13.50\nLevel 3 -> Level 4 (20 Completes) : $18.00\nLevel 4 -> Level 5 (25 Completes) : $21.00")
+        "Level 1 (5 Completes) : $4.75\nLevel 2 (15 Completes) : $13.50\nLevel 3 (30 Completes) : $25.50\nLevel 4 (50 Completes) : $42.50\nLevel 5 (75 Completes) : $63.75")
         .addField("[Nest] Dexterity Exaltation:",
-        "Level 0 -> Level 1 (5 Completes) : $4.50\nLevel 1 -> Level 2 (10 Completes) : $9.00\nLevel 2 -> Level 3 (15 Completes) : $13.50\nLevel 3 -> Level 4 (20 Completes) : $18.00\nLevel 4 -> Level 5 (25 Completes) : $21.00")        
+        "Level 1 (5 Completes) : $4.25\nLevel 2 (15 Completes) : $12.00\nLevel 3 (30 Completes) : $24.00\nLevel 4 (50 Completes) : $37.50\nLevel 5 (75 Completes) : $52.50")        
         .addField("[Cult] Speed Exaltations: ",
-        "Level 0 -> Level 1 (5 Completes) : $4.50\nLevel 1 -> Level 2 (10 Completes) : $9.00\nLevel 2 -> Level 3 (15 Completes) : $13.50\nLevel 3 -> Level 4 (20 Completes) : $18.00\nLevel 4 -> Level 5 (25 Completes) : $21.25")
+        "Level 1 (5 Completes) : $5.00\nLevel 2 (15 Completes) : $13.50\nLevel 3 (30 Completes) : $24.00\nLevel 4 (50 Completes) : $40.00\nLevel 5 (75 Completes) : $60.00")
         .addField("**DOUBLE VALUE**\n[MBC + Void] Defense + Mana Exaltations: ",
-        "Level 0 -> Level 1 (5 Completes) : $5.00\nLevel 1 -> Level 2 (10 Completes) : $9.50\nLevel 2 -> Level 3 (15 Completes) : $13.50\nLevel 3 -> Level 4 (20 Completes) : $18.00\nLevel 4 -> Level 5 (25 Completes) : $22.50")        
+        "Level 1 (5 Completes) : $5.25\nLevel 2 (15 Completes) : $15.00\nLevel 3 (30 Completes) : $28.50\nLevel 4 (50 Completes) : $47.50\nLevel 5 (75 Completes) : $71.70")        
         .addField("**DOUBLE VALUE**\n[Fungal + Crystal] Wisdom + Vitality Exaltations: ",
-        "Level 0 -> Level 1 (5 Completes) : $5.00\nLevel 1 -> Level 2 (10 Completes) : $9.50\nLevel 2 -> Level 3 (15 Completes) : $13.50\nLevel 3 -> Level 4 (20 Completes) : $18.00\nLevel 4 -> Level 5 (25 Completes) : $22.50")        
+        "Level 1 (5 Completes) : $5.00\nLevel 2 (15 Completes) : $14.25\nLevel 3 (30 Completes) : $27.00\nLevel 4 (50 Completes) : $45.00\nLevel 5 (75 Completes) : $67.50")        
         .addField("[Oryx3] Life Exaltations: ",
-        "Level 0 -> Level 1 (5 Completes) : $25.00\nLevel 1 -> Level 2 (10 Completes) : $48.00\nLevel 2 -> Level 3 (15 Completes) : $72.00\nLevel 3 -> Level 4 (20 Completes) : $95.00\nLevel 4 -> Level 5 (25 Completes) : $112.00")
+        "Level 1 (5 Completes) : $35.00\nLevel 2 (15 Completes) : $90.00\nLevel 3 (30 Completes) : $150.00\nLevel 4 (50 Completes) : $250.00\nLevel 5 (75 Completes) : $375.00")
         .setDescription("Purchase the cheapest Exaltation Farming!")
         .setFooter("NexusMart")
         .setTimestamp()
