@@ -602,7 +602,7 @@ bot.on("message", async message => {
         .addField("[Shatters] Attack Exaltation:",
         "Level 1 (5 Completes) : $4.75\nLevel 2 (15 Completes) : $13.50\nLevel 3 (30 Completes) : $25.50\nLevel 4 (50 Completes) : $42.50\nLevel 5 (75 Completes) : $63.75")
         .addField("[Nest] Dexterity Exaltation:",
-        "Level 1 (5 Completes) : $4.25\nLevel 2 (15 Completes) : $12.00\nLevel 3 (30 Completes) : $24.00\nLevel 4 (50 Completes) : $37.50\nLevel 5 (75 Completes) : $52.50")        
+        "Level 1 (5 Completes) : $4.25\nLevel 2 (15 Completes) : $12.00 (Save 6%)\nLevel 3 (30 Completes) : $24.00 (Save 6%)\nLevel 4 (50 Completes) : $37.50 (Save 6.25%)\nLevel 5 (75 Completes) : $52.50 (Save 7.75%)")        
         .addField("[Cult] Speed Exaltations: ",
         "Level 1 (5 Completes) : $5.00\nLevel 2 (15 Completes) : $13.50\nLevel 3 (30 Completes) : $24.00\nLevel 4 (50 Completes) : $40.00\nLevel 5 (75 Completes) : $60.00")
         .addField("**DOUBLE VALUE**\n[MBC + Void] Defense + Mana Exaltations: ",
