@@ -360,7 +360,7 @@ bot.on("message", async message => {
         .setTitle("Maxing Service")
         .setThumbnail("https://i.imgur.com/dKc7rfs.png")
         .addField("Price:",
-        "8/8: $6.50\n6/8: $5.00")
+        "8/8: $8.00\n6/8: $6.00")
         .setDescription("Purchase the cheapest maxing")
         .setFooter("NexusMart")
         .setTimestamp()
