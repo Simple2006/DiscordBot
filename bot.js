@@ -36,7 +36,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix = process.env.BOT_PREFIX
+    let prefix = process.env.BOT_PREFIX;
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -141,19 +141,17 @@ bot.on("message", async message => {
 		return message.reply('Minimum Purchase of 24 Vaults/Slots/Or Both Required');
 	}
 	else if(amount >= 24 && amount <= 63){
-		return message.reply('Price is $' + amount * 1.50 + "\nSpecial Sale On Right Now!\n1. 64+ Vaults Only 0.75 Ea.\n**SAVE $65 WITH OUR PACKAGE: 75 Vaults and 25 Char Slots for ONLY $60!**");
+		return message.reply('Price is $' + amount * 1.50 + "\nSpecial Sale On Right Now!\n64+ Vaults/Slots Only 0.75 Ea.\n**SAVE $65 WITH OUR PACKAGE: 75 Vaults and 25 Char Slots for ONLY $60!**");
 	}
 	else if(amount >= 64 && amount <= 140){
-		return message.reply('Price is $' + amount * 0.75 + "\nSpecial Sale On Right Now!\n1. 64+ Vaults Only 0.75 Ea.\n**SAVE $65 WITH OUR PACKAGE: 75 Vaults and 25 Char Slots for ONLY $60!**" );
+		return message.reply('Price is $' + amount * 0.75 + "\nSpecial Sale On Right Now!\n64+ Vaults/Slots Only 0.75 Ea.\n**SAVE $65 WITH OUR PACKAGE: 75 Vaults and 25 Char Slots for ONLY $60!**" );
 	}
 	else{
 		x =  amount * 0.75; //change to 1.25 after sale
 		return message.reply('Price is $' + x);
-	}
-	
+	}	
 }
-	
-}
+
     if(cmd === `${prefix}help`) {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
