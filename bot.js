@@ -159,7 +159,13 @@ bot.on("message", async message => {
 
 		var items = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
 		message.channel.send('Spinning the wheel!')
-		setTimeout(() => { return message.reply('You won ' + random_item(items) + 'x Decas!'); }, 2000);
+		var x = random_item(items);
+		if (x === 32) {
+			setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
+		}
+		else{
+			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
+		}
 	}
     
     // check if the user sending the command has the Admin role, otherwise return
