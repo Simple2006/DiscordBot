@@ -179,31 +179,10 @@ bot.on("message", async message => {
 		message.channel.send('Spinning the **PREMIUM** wheel!')
 		var x = random_item(items);
 		if (x === 32 || x === 64) {
-			Object.defineProperty(String.prototype, 'hashCode', {
-  			value: function() {
-    			var hash = 0, i, chr;
-   			for (i = 0; i < this.length; i++) {
-      				chr   = this.charCodeAt(i);
-     				hash  = ((hash << 5) - hash) + chr;
-      				hash |= 0; // Convert to 32bit integer
-   			}
-    			return message.reply(hash);
-  			}
-		});
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
     			return message.reply(hash);
 		}
 		else{
-			Object.defineProperty(String.prototype, 'hashCode', {
-  			value: function() {
-    			var hash = 0, i, chr;
-   			for (i = 0; i < this.length; i++) {
-      				chr   = this.charCodeAt(i);
-     				hash  = ((hash << 5) - hash) + chr;
-      				hash |= 0; // Convert to 32bit integer
-   			}
-  			}
-		});
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
 			return message.reply(hash);
 		}
