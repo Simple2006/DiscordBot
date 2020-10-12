@@ -1,3 +1,4 @@
+//start of code
 const Discord = require("discord.js");
 
 const bot = new Discord.Client({disableEveryone: true});
@@ -126,31 +127,11 @@ bot.on("message", async message => {
 		
 			
 		return message.reply('Price is $' + amount * 0.15);
-	}
-	    
-}
-	   
-    if(cmd === `${prefix}vault` || cmd === `${prefix}char`) {
-//remove discount messages after sale and change 64+ pricing
-	const amount = parseInt(args[0]);
-
-	if(isNaN(amount)){
-		return message.reply('that doesn\'t seem to be a valid number.');
-	}
-	else if(amount < 24){
-		return message.reply('Minimum Purchase of 24 Vaults/Slots/Or Both Required');
-	}
-	else if(amount >= 24 && amount <= 63){
-		return message.reply('Price is $' + amount * 1.50 + "\nSpecial Sale On Right Now!\n64+ Vaults/Slots Only 0.75 Ea.\n**SAVE $65 WITH OUR PACKAGE: 75 Vaults and 25 Char Slots for ONLY $60!**");
-	}
-	else if(amount >= 64 && amount <= 140){
-		return message.reply('Price is $' + amount * 0.75 + "\nSpecial Sale On Right Now!\n64+ Vaults/Slots Only 0.75 Ea.\n**SAVE $65 WITH OUR PACKAGE: 75 Vaults and 25 Char Slots for ONLY $60!**" );
-	}
-	else{
-		x =  amount * 0.75; //change to 1.25 after sale
-		return message.reply('Price is $' + x);
 	}	
+	
 }
+
+
 
     if(cmd === `${prefix}help`) {
         var embed = new Discord.MessageEmbed()
@@ -162,14 +143,24 @@ bot.on("message", async message => {
         .addField("👷 Admin:\n",
         "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nnm!misc\n\n**Shop:**\nnm!deca-shop\nnm!keyper-running\nnm!skin-shop\nnm!maxing-service\nnm!event-farming\nnm!exaltation\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
         .addField("❤️ Everyone:\n",
-        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!vault *amount*\nnm!char *amount*\nnm!server\nnm!info *member*\nnm!hello\nnm!ping")
+        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nnm!info *member*\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
     }	
+	if (cmd === `${prefix}spin`) {
+		function random_item(items)
+		{
+  
+		return items[Math.floor(Math.random()*items.length)];
+     
+		}
 
-	
+		var items = [2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
+		message.channel.send('Spinning the wheel!')
+		setTimeout(() => { return message.reply('You won ' + random_item(items) + 'x Decas!'); }, 2000);
+	}
     
     // check if the user sending the command has the Admin role, otherwise return
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
