@@ -1,5 +1,6 @@
 //start of code
 const Discord = require("discord.js");
+const crypto = require("crypto");
 
 const bot = new Discord.Client({disableEveryone: true});
 
@@ -37,7 +38,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix = process.env.BOT_TOKEN;
+    let prefix = env.process.BOT_PREFIX;
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -165,14 +166,14 @@ bot.on("message", async message => {
       			var hash = crypto.getHashes(); 
       			var num = x.toString();
       			var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
-      			return message.reply("||" + hashPwd + "||");  
+                setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);  
 		}
 		else{
       			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
       			var hash = crypto.getHashes(); 
       			var num = x.toString();
       			var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
-      			return message.reply("||" + hashPwd + "||");
+      			setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
 		}
 	}
 	if (cmd === `${prefix}prspin`) {
@@ -191,14 +192,14 @@ bot.on("message", async message => {
       			var hash = crypto.getHashes(); 
       			var num = x.toString();
       			var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
-      			return message.reply("||" + hashPwd + "||");
+      			setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
 		}
 		else{
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
       			var hash = crypto.getHashes(); 
       			var num = x.toString();
       			var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
-      			return message.reply("||" + hashPwd + "||");
+      			setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
 		}
 	}
     
