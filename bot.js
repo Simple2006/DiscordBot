@@ -157,7 +157,7 @@ bot.on("message", async message => {
      
 		}
 
-		var items = [2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
+		var items = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
 		message.channel.send('Spinning the wheel!')
 		setTimeout(() => { return message.reply('You won ' + random_item(items) + 'x Decas!'); }, 2000);
 	}
