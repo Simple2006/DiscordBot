@@ -157,7 +157,7 @@ bot.on("message", async message => {
      
 		}
 
-		var items = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
+		var items = [2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
 		message.channel.send('Spinning the wheel!')
 		var x = random_item(items);
 		if (x === 32) {
@@ -175,7 +175,7 @@ bot.on("message", async message => {
      
 		}
 
-		var items = [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 16, 16, 16, 16, 16, 16, 16, 16, 24, 24, 24, 24, 32, 32, 32, 64];
+		var items = [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 16, 16, 16, 16, 16, 16, 16, 16, 16, 24, 24, 24, 24, 32, 32, 32, 64];
 		message.channel.send('Spinning the **PREMIUM** wheel!')
 		var x = random_item(items);
 		if (x === 32 || x === 64) {
