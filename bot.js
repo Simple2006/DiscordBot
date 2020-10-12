@@ -1,6 +1,5 @@
 //start of code
 const Discord = require("discord.js");
-const Crypto = require("crypto");
 
 const bot = new Discord.Client({disableEveryone: true});
 
