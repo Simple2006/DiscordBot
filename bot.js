@@ -162,18 +162,18 @@ bot.on("message", async message => {
 		message.channel.send('Spinning the wheel!')
 		var x = random_item(items);
 		if (x === 32) {
-      setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
-      hash = crypto.getHashes(); 
-      num = Number.toString(x)
-      hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
-      return message.reply("||" + hashPwd + "||");  
+      			setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
+      			hash = crypto.getHashes(); 
+      			num = Number.toString(x)
+      			hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
+      			return message.reply("||" + hashPwd + "||");  
 		}
 		else{
-      setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
-      hash = crypto.getHashes(); 
-      num = Number.toString(x)
-      hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
-      return message.reply("||" + hashPwd + "||");
+      			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
+      			hash = crypto.getHashes(); 
+      			num = Number.toString(x)
+      			hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
+      			return message.reply("||" + hashPwd + "||");
 		}
 	}
 	if (cmd === `${prefix}prspin`) {
@@ -188,18 +188,18 @@ bot.on("message", async message => {
 		message.channel.send('Spinning the **PREMIUM** wheel!')
 		var x = random_item(items);
 		if (x === 32 || x === 64) {
-      setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
-      hash = crypto.getHashes(); 
-      num = Number.toString(x)
-      hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
-      return message.reply("||" + hashPwd + "||");
+      			setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
+      			hash = crypto.getHashes(); 
+      			num = Number.toString(x)
+      			hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
+      			return message.reply("||" + hashPwd + "||");
 		}
 		else{
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
-      hash = crypto.getHashes(); 
-      num = Number.toString(x)
-      hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
-      return message.reply("||" + hashPwd + "||");
+      			hash = crypto.getHashes(); 
+      			num = Number.toString(x)
+      			hashPwd = crypto.createHash('sha1').update(x).digest('hex'); 
+      			return message.reply("||" + hashPwd + "||");
 		}
 	}
     
