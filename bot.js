@@ -167,6 +167,24 @@ bot.on("message", async message => {
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
 		}
 	}
+	if (cmd === `${prefix}prspin`) {
+		function random_item(items)
+		{
+  
+		return items[Math.floor(Math.random()*items.length)];
+     
+		}
+
+		var items = [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 16, 16, 16, 16, 16, 16, 16, 16, 24, 24, 24, 24, 32, 32, 32, 64];
+		message.channel.send('Spinning the **PREMIUM** wheel!')
+		var x = random_item(items);
+		if (x === 32 || x === 64) {
+			setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
+		}
+		else{
+			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
+		}
+	}
     
     // check if the user sending the command has the Admin role, otherwise return
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
