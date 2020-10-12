@@ -143,7 +143,7 @@ bot.on("message", async message => {
         .addField("👷 Admin:\n",
         "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nnm!misc\n\n**Shop:**\nnm!deca-shop\nnm!keyper-running\nnm!skin-shop\nnm!maxing-service\nnm!event-farming\nnm!exaltation\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
         .addField("❤️ Everyone:\n",
-        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nnm!info *member*\nnm!spin\nnm!hello\nnm!ping")
+        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nnm!info *member*\nnm!spin\nnm!prspin\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
