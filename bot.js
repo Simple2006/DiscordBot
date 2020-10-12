@@ -187,7 +187,7 @@ bot.on("message", async message => {
      				hash  = ((hash << 5) - hash) + chr;
       				hash |= 0; // Convert to 32bit integer
    			}
-    			return hash;
+    			return message.reply(hash);
   			}
 		});
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
@@ -201,7 +201,7 @@ bot.on("message", async message => {
      				hash  = ((hash << 5) - hash) + chr;
       				hash |= 0; // Convert to 32bit integer
    			}
-    			return hash;
+    			return message.reply(hash);
   			}
 		});
 			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
