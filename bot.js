@@ -708,7 +708,13 @@ bot.on("message", async message => {
        member.kick()
        message.channel.send(member + " was kicked! ✅")
    }
-	
+
+   if(cmd === `${prefix}amongus`){
+	let channel = message.member.voiceChannel;
+        for (let member of channel.members) {
+            member[1].setMute(true)
+        }
+     }
 })
 
 bot.login(process.env.BOT_TOKEN)
