@@ -713,8 +713,7 @@ bot.on("message", async message => {
    	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
    	for (const [memberID, member] of channel.members) {
 		member.voice.setMute(true);
-		voiceChannel.setUserLimit(1)
-   	 	}
+   	}
 	message.channel.send("Mute's Complete!")
    }
    
@@ -722,8 +721,7 @@ bot.on("message", async message => {
    	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
    	for (const [memberID, member] of channel.members) {
     	 	member.voice.setMute(false);
-		voiceChannel.setUserLimit(12)
-    	 	}
+    	}
 	message.channel.send("Unmute's Complete!")
    }
 
