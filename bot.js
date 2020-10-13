@@ -712,20 +712,12 @@ bot.on("message", async message => {
 if (cmd === `${prefix}muteall`) {
   let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
   for (const [memberID, member] of channel.members) {
-    // I added the following if statement to mute everyone but the invoker:
-    // if (member != message.member)
-
-    // This single line however, nested inside the for loop, should mute everyone in the channel:
     member.voice.setMute(true);
     }
   }
 if (cmd === `${prefix}unmuteall`) {
   let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
   for (const [memberID, member] of channel.members) {
-    // I added the following if statement to mute everyone but the invoker:
-    // if (member != message.member)
-
-    // This single line however, nested inside the for loop, should mute everyone in the channel:
     member.voice.setMute(false);
     }
   }
