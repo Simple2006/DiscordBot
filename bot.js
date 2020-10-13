@@ -617,9 +617,25 @@ bot.on("message", async message => {
         .setColor(0x695DCF)
         .setTitle("Welcome to NexusMart's Test of Luck!")
         .setThumbnail("https://media2.giphy.com/media/PjTywYBHJkrLV24gSR/giphy.gif")
+	.addField("What can you win?",
+	"2 - 32 Decas!")
         .addField("Price:",
-        "1 Spin: $2.50\n2 Spins: $4.50\n5 Spins: $11.00\n10 Spins: $21.00\n20 Spins: $40.00\nAdditional Spins: $1.75")
+        "1 Spin: $2.30\n2 Spins: $4.60\n5 Spins: $11.50 **MOST POPULAR**\n10 Spins: $23.00\n20 Spins: $40.00 **BEST VALUE**\nAdditional Spins: $1.90")
         .setDescription("Instructions:\n1. Start a ticket\n2. Specify how many spins you would like to purchase\n3. Test your luck!")
+        .setFooter("NexusMart")
+        .setTimestamp()
+        message.channel.send(embed)
+    }
+    if(cmd === `${prefix}prroulette`){
+        var embed = new Discord.MessageEmbed()
+        .setColor(0x695DCF)
+        .setTitle("Welcome to NexusMart's **PREMIUM** Test of Luck!")
+        .setThumbnail("https://media2.giphy.com/media/PjTywYBHJkrLV24gSR/giphy.gif")
+	.addField("What can you win?",
+	"8 - 64 Decas!")
+        .addField("Price:",
+        "1 Spin: $4.30\n2 Spins: $8.60\n5 Spins: $21.50 **MOST POPULAR**\n10 Spins: $43.00\n20 Spins: $75.00 **BEST VALUE**\nAdditional Spins: $3.80")
+        .setDescription("Instructions:\n1. Start a ticket\n2. Specify how many spins you would like to purchase\n3. Test your luck the **PREMIUM** way!")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
