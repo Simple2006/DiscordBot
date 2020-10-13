@@ -710,11 +710,10 @@ bot.on("message", async message => {
    }
 
    if(cmd === `${prefix}amongus`){
-	let channel = message.member.voiceChannel;
-        for (let member of channel.members) {
-            member[1].setMute(true)
-        }
-     }
+	let channel = message.author.voiceChannel;
+	message.channel.send(channel)
+   }
+	
 })
 
 bot.login(process.env.BOT_TOKEN)
