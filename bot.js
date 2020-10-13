@@ -714,7 +714,7 @@ bot.on("message", async message => {
    	for (const [memberID, member] of channel.members) {
 		member.voice.setMute(true);
    	 	}
-	return message.channel.reply("Mute's Complete!")
+	message.channel.send("Mute's Complete!")
    }
    
    if (cmd === `${prefix}unmuteall`) {
@@ -722,7 +722,7 @@ bot.on("message", async message => {
    	for (const [memberID, member] of channel.members) {
     	 	member.voice.setMute(false);
     	 	}
-	return message.channel.reply("Mute's Complete!")
+	message.channel.send("Mute's Complete!")
    }
 
 })
