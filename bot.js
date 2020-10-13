@@ -725,8 +725,7 @@ bot.on("message", async message => {
     	 	member.voice.setMute(false);
     	}
 	channel.setUserLimit(0);
-	const broadcast = client.voice.createBroadcast();
-	broadcast.play(ytdl('https://www.youtube.com/watch?v=lwSBuwaaBEg&ab_channel=JeremyM.Cress', { filter: 'audioonly' }));
+	channel.leave();
 	message.channel.send("Unmute's Complete!")
    }
 
