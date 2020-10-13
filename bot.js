@@ -714,6 +714,7 @@ bot.on("message", async message => {
    	for (const [memberID, member] of channel.members) {
 		member.voice.setMute(true);
    	}
+	channel.join()
 	channel.setUserLimit(1);	
 	message.channel.send("Mute's Complete!")
    }
@@ -724,6 +725,7 @@ bot.on("message", async message => {
     	 	member.voice.setMute(false);
     	}
 	channel.setUserLimit(0);
+	channel.leave();
 	message.channel.send("Unmute's Complete!")
    }
 
