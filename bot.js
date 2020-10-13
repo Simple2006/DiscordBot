@@ -708,25 +708,27 @@ bot.on("message", async message => {
 		
     }
 	
-   if(cmd === `${prefix}ban` && member.hasPermission('BAN_MEMBERS')){
-       const user = message.mentions.users.first();
-       if(isNaN(user)){
-           return message.channel.send("Please specify a user to ban!")
-       }
-       const member = message.guild.member(user);
-       member.ban()
-       message.channel.send(member + " was banned! ✅")
-   }
+   if(cmd === `${prefix}ban`){
+       if(message.member.roles.find(r => r.name === "Admin")){
+       		const user = message.mentions.users.first();
+       		if(isNaN(user)){
+           		return message.channel.send("Please specify a user to ban!")
+       		}
+       		const member = message.guild.member(user);
+       		member.ban()
+       		message.channel.send(member + " was banned! ✅")
+   	}
 
-   if(cmd === `${prefix}kick` && member.hasPermission('KICK_MEMBERS')){
-       const user = message.mentions.users.first();
-       if(isNaN(user)){
-        return message.channel.send("Please specify a user to kick!")
-    }
-       const member = message.guild.member(user);
-       member.kick()
-       message.channel.send(member + " was kicked! ✅")
-   }
+   if(cmd === `${prefix}kick`){
+       if(message.member.roles.find(r => r.name === "Admin")){
+       		const user = message.mentions.users.first();
+       		if(isNaN(user)){
+        		return message.channel.send("Please specify a user to kick!")
+    		}
+       		const member = message.guild.member(user);
+       		member.kick()
+       		message.channel.send(member + " was kicked! ✅")
+   	}
 
 })
 
