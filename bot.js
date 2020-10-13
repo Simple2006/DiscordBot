@@ -712,7 +712,7 @@ bot.on("message", async message => {
    if(cmd === `${prefix}amongus`){
 	let channel = message.author.voiceChannel;
 	count = 0
-	for (member of channel) {
+	for (member in message.author.voiceChannel) {
 		member[count].setMute(true)
 		count = count + 1
 	}
