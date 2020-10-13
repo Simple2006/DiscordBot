@@ -717,6 +717,7 @@ if (cmd === `${prefix}muteall`) {
 
     // This single line however, nested inside the for loop, should mute everyone in the channel:
     member.voice.setMute(true);
+    }
   }
 	
 })
