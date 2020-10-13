@@ -722,7 +722,7 @@ bot.on("message", async message => {
    	for (const [memberID, member] of channel.members) {
     	 	member.voice.setMute(false);
     	 	}
-	message.channel.send("Mute's Complete!")
+	message.channel.send("Unmute's Complete!")
    }
 
 })
