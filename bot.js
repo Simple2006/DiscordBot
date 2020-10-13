@@ -204,7 +204,7 @@ bot.on("message", async message => {
 	}
     
     // check if the user sending the command has the Admin role, otherwise return
-    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
 
     if(cmd === `${prefix}thicket`){
         var embed = new Discord.MessageEmbed()
@@ -708,20 +708,19 @@ bot.on("message", async message => {
        member.kick()
        message.channel.send(member + " was kicked! ✅")
    }
-  if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
 	
-  if (cmd === `${prefix}muteall`) {
-  let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
-  for (const [memberID, member] of channel.members) {
-	member.voice.setMute(true);
-   	}
-  }
-  if (cmd === `${prefix}unmuteall`) {
-  let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
-  for (const [memberID, member] of channel.members) {
-    	member.voice.setMute(false);
-    	}
-  }
+   if (cmd === `${prefix}muteall`) {
+   let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+   for (const [memberID, member] of channel.members) {
+	 member.voice.setMute(true);
+   	 }
+   }
+   if (cmd === `${prefix}unmuteall`) {
+   let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+   for (const [memberID, member] of channel.members) {
+    	 member.voice.setMute(false);
+    	 }
+   }
 	
 })
 
