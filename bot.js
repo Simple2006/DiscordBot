@@ -714,16 +714,17 @@ bot.on("message", async message => {
    	for (const [memberID, member] of channel.members) {
 		member.voice.setMute(true);
    	 	}
-   	}
 	return message.channel.reply("Mute's Complete!")
+   }
    
    if (cmd === `${prefix}unmuteall`) {
    	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
    	for (const [memberID, member] of channel.members) {
     	 	member.voice.setMute(false);
     	 	}
-   	}
-	return message.channel.reply("Unmute's Complete!")
+	return message.channel.reply("Mute's Complete!")
+   }
+
 })
 
 bot.login(process.env.BOT_TOKEN)
