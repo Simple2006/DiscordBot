@@ -718,6 +718,7 @@ bot.on("message", async message => {
        		member.ban()
        		message.channel.send(member + " was banned! ✅")
    	}
+   }
 
    if(cmd === `${prefix}kick`){
        if(message.member.roles.find(r => r.name === "Admin")){
@@ -729,6 +730,7 @@ bot.on("message", async message => {
        		member.kick()
        		message.channel.send(member + " was kicked! ✅")
    	}
+   }
 
 })
 
