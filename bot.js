@@ -202,7 +202,7 @@ bot.on("message", async message => {
       			setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
 		}
 	}
-	
+    //check if user has Loser role
     if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
 	
     if (cmd === `${prefix}muteall`) {
@@ -224,9 +224,6 @@ bot.on("message", async message => {
 	channel.leave();
 	message.channel.send("Unmute's Complete!")
    }
-    
-    // check if the user sending the command has the Admin role, otherwise return
-    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
 
     if(cmd === `${prefix}thicket`){
         var embed = new Discord.MessageEmbed()
@@ -711,7 +708,7 @@ bot.on("message", async message => {
 		
     }
 	
-   if(cmd === `${prefix}ban`){
+   if(cmd === `${prefix}ban` && member.hasPermission('BAN_MEMBERS')){
        const user = message.mentions.users.first();
        if(isNaN(user)){
            return message.channel.send("Please specify a user to ban!")
@@ -721,7 +718,7 @@ bot.on("message", async message => {
        message.channel.send(member + " was banned! ✅")
    }
 
-   if(cmd === `${prefix}kick`){
+   if(cmd === `${prefix}kick` && member.hasPermission('KICK_MEMBERS')){
        const user = message.mentions.users.first();
        if(isNaN(user)){
         return message.channel.send("Please specify a user to kick!")
