@@ -709,7 +709,7 @@ bot.on("message", async message => {
     }
 	
    if(cmd === `${prefix}ban`){
-       if(message.member.roles.find(r => r.name === "Admin")){
+       if(message.member.roles.some(role => role.name === "Admin")){
        		const user = message.mentions.users.first();
        		if(isNaN(user)){
            		return message.channel.send("Please specify a user to ban!")
@@ -721,7 +721,7 @@ bot.on("message", async message => {
    }
 
    if(cmd === `${prefix}kick`){
-       if(message.member.roles.find(r => r.name === "Admin")){
+       if(message.member.roles.some(role => role.name === "Admin")){
        		const user = message.mentions.users.first();
        		if(isNaN(user)){
         		return message.channel.send("Please specify a user to kick!")
