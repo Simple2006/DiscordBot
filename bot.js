@@ -708,7 +708,7 @@ bot.on("message", async message => {
 		
     }
 
-   if(message.author.roles.find(role => role.name === "Admin")){
+   if(message.author.roles.some(role => role.name === "Admin")){
 	 
    if(cmd === `${prefix}ban`){
        const user = message.mentions.users.first();
