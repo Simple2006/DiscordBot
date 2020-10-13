@@ -202,9 +202,31 @@ bot.on("message", async message => {
       			setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
 		}
 	}
+	
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
+	
+    if (cmd === `${prefix}muteall`) {
+   	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+   	for (const [memberID, member] of channel.members) {
+		member.voice.setMute(true);
+   	}
+	channel.join()
+	channel.setUserLimit(1);	
+	message.channel.send("Mute's Complete!")
+   }
+   
+    if (cmd === `${prefix}unmuteall`) {
+   	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+   	for (const [memberID, member] of channel.members) {
+    	 	member.voice.setMute(false);
+    	}
+	channel.setUserLimit(0);
+	channel.leave();
+	message.channel.send("Unmute's Complete!")
+   }
     
     // check if the user sending the command has the Admin role, otherwise return
-    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
 
     if(cmd === `${prefix}thicket`){
         var embed = new Discord.MessageEmbed()
@@ -707,26 +729,6 @@ bot.on("message", async message => {
        const member = message.guild.member(user);
        member.kick()
        message.channel.send(member + " was kicked! ✅")
-   }
-	
-   if (cmd === `${prefix}muteall`) {
-   	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
-   	for (const [memberID, member] of channel.members) {
-		member.voice.setMute(true);
-   	}
-	channel.join()
-	channel.setUserLimit(1);	
-	message.channel.send("Mute's Complete!")
-   }
-   
-   if (cmd === `${prefix}unmuteall`) {
-   	let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
-   	for (const [memberID, member] of channel.members) {
-    	 	member.voice.setMute(false);
-    	}
-	channel.setUserLimit(0);
-	channel.leave();
-	message.channel.send("Unmute's Complete!")
    }
 
 })
