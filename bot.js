@@ -631,7 +631,7 @@ bot.on("message", async message => {
         message.channel.send(embed)
 	}
 	
-    if(cmd === `${prefix}roulette`){
+    if(cmd === `${prefix}roulette` || cmd === `${prefix}r`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Welcome to NexusMart's Test of Luck!")
@@ -645,7 +645,7 @@ bot.on("message", async message => {
         .setTimestamp()
         message.channel.send(embed)
     }
-    if(cmd === `${prefix}prroulette`){
+    if(cmd === `${prefix}prroulette` || cmd === `${prefix}prr`){
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Welcome to NexusMart's **PREMIUM** Test of Luck!")
@@ -707,29 +707,32 @@ bot.on("message", async message => {
         message.channel.send(embed)
 		
     }
-
-   if(message.author.roles.some(role => role.name === "Admin")){
 	 
    if(cmd === `${prefix}ban`){
-       const user = message.mentions.users.first();
-       if(isNaN(user)){
-           return message.channel.send("Please specify a user to ban!")
-       	}
-       	const member = message.guild.member(user);
-       	member.ban()
-       	message.channel.send(member + " was banned! ✅")
+   	let allowedRole = message.guild.roles.find("Admin");
+    	if (message.member.roles.has(allowedRole.id) {
+		const user = message.mentions.users.first();
+        	if(isNaN(user)){
+            	return message.channel.send("Please specify a user to ban!")
+       	 	}
+       	 	const member = message.guild.member(user);
+       	 	member.ban()
+       	 	message.channel.send(member + " was banned! ✅")
+    	}
    }
 
    if(cmd === `${prefix}kick`){
-       	const user = message.mentions.users.first();
-       	if(isNaN(user)){
-            return message.channel.send("Please specify a user to kick!")
-    	}
-       	const member = message.guild.member(user);
-       	member.kick()
-       	message.channel.send(member + " was kicked! ✅")
+	let allowedRole = message.guild.roles.find("Admin");
+    	if (message.member.roles.has(allowedRole.id) {
+       		const user = message.mentions.users.first();
+       		if(isNaN(user)){
+            	return message.channel.send("Please specify a user to kick!")
+    		}
+       		const member = message.guild.member(user);
+       		member.kick()
+       		message.channel.send(member + " was kicked! ✅")
+   	}
    }
-  }
 
 })
 
