@@ -710,7 +710,7 @@ bot.on("message", async message => {
 	 
    if(cmd === `${prefix}ban`){
    	let allowedRole = message.guild.roles.find("Admin");
-    	if (message.member.roles.has(allowedRole.id) {
+    	if (message.member.roles.has(allowedRole.id)) {
 		const user = message.mentions.users.first();
         	if(isNaN(user)){
             	return message.channel.send("Please specify a user to ban!")
@@ -723,7 +723,7 @@ bot.on("message", async message => {
 
    if(cmd === `${prefix}kick`){
 	let allowedRole = message.guild.roles.find("Admin");
-    	if (message.member.roles.has(allowedRole.id) {
+    	if (message.member.roles.has(allowedRole.id)) {
        		const user = message.mentions.users.first();
        		if(isNaN(user)){
             	return message.channel.send("Please specify a user to kick!")
