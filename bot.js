@@ -709,29 +709,23 @@ bot.on("message", async message => {
     }
 	 
    if(cmd === `${prefix}ban`){
-   	let allowedRole = message.guild.roles.find("Admin");
-    	if (message.member.roles.has(allowedRole.id)) {
-		const user = message.mentions.users.first();
-        	if(isNaN(user)){
-            	return message.channel.send("Please specify a user to ban!")
-       	 	}
-       	 	const member = message.guild.member(user);
-       	 	member.ban()
-       	 	message.channel.send(member + " was banned! ✅")
-    	}
+	const user = message.mentions.users.first();
+        if(isNaN(user)){
+            return message.channel.send("Please specify a user to ban!")
+       	 }
+       	 const member = message.guild.member(user);
+       	 member.ban()
+       	 message.channel.send(member + " was banned! ✅")
    }
 
    if(cmd === `${prefix}kick`){
-	let allowedRole = message.guild.roles.find("Admin");
-    	if (message.member.roles.has(allowedRole.id)) {
-       		const user = message.mentions.users.first();
-       		if(isNaN(user)){
-            	return message.channel.send("Please specify a user to kick!")
-    		}
-       		const member = message.guild.member(user);
-       		member.kick()
-       		message.channel.send(member + " was kicked! ✅")
-   	}
+       	const user = message.mentions.users.first();
+       	if(isNaN(user)){
+           return message.channel.send("Please specify a user to kick!")
+    	}
+       	const member = message.guild.member(user);
+       	member.kick()
+       	message.channel.send(member + " was kicked! ✅")
    }
 
 })
