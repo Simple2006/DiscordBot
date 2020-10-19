@@ -1,5 +1,6 @@
 //start of code
 const Discord = require("discord.js");
+const crypto = require("crypto");
 
 const bot = new Discord.Client({disableEveryone: true});
 
@@ -37,7 +38,7 @@ bot.on("message", async message => {
         }
     }
 
-    let prefix = process.env.BOT_PREFIX
+    let prefix = process.env.BOT_PREFIX;
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -130,6 +131,9 @@ bot.on("message", async message => {
 	}	
 	
 }
+
+
+
     if(cmd === `${prefix}help`) {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
@@ -138,19 +142,69 @@ bot.on("message", async message => {
         .addField("NexusMart:",
         "Prefix: nm!\nLanguage: English")
         .addField("👷 Admin:\n",
-        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nnm!misc\n\n**Shop:**\nnm!deca-shop\nnm!keyper-running\nnm!skin-shop\nnm!maxing-service\nnm!event-farming\nnm!exaltation\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
+        "**Management:**\nnm!welcome\nnm!terms-of-service\nnm!ban *member*\nnm!kick *member*\nnm!muteall\nnm!unmuteall\n\n**Duping:**\nnm!dupe\nnm!vaultslot\nnm!qchest\nnm!runes\nnm!misc\n\n**Shop:**\nnm!deca-shop\nnm!keyper-running\nnm!skin-shop\nnm!maxing-service\nnm!event-farming\nnm!exaltation\nnm!roulette\nnm!prroulette\nMore Unreleased\n\n**Dungeons:**\nnm!dungeon-running-overview\nnm!losthalls\nnm!oryx3\nnm!shatters\nnm!fungal\nnm!nest\nnm!parasite\nnm!thicket\nMore Unreleased!")
         .addField("❤️ Everyone:\n",
-        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nnm!info *member*\nnm!hello\nnm!ping")
+        "**Public Commands:**\nnm!dupe *amount*\nnm!deca *amount*\nnm!server\nnm!info *member*\nnm!spin\nnm!prspin\nnm!hello\nnm!ping")
         .setDescription("Help Panel for NexusMart")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
     }	
-
 	
-    
-    // check if the user sending the command has the Admin role, otherwise return
-    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
+	if (cmd === `${prefix}spin`) {
+		function random_item(items)
+		{
+  
+		return items[Math.floor(Math.random()*items.length)];
+     
+		}
+
+		var items = [2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 8, 16, 16, 16, 16, 24, 24, 24, 32, 32];
+		message.channel.send('Spinning the wheel!')
+		var x = random_item(items);
+		if (x === 32) {
+      		setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
+      		var hash = crypto.getHashes(); 
+      		var num = x.toString();
+      		var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
+            setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);  
+		}
+		else{
+      		setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
+      		var hash = crypto.getHashes(); 
+      		var num = x.toString();
+      		var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
+      		setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
+		}
+	}
+	if (cmd === `${prefix}prspin`) {
+		function random_item(items)
+		{
+  
+		return items[Math.floor(Math.random()*items.length)];
+     
+		}
+
+		var items = [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 24, 24, 24, 32, 32, 64];
+		message.channel.send('Spinning the **PREMIUM** wheel!')
+		var x = random_item(items);
+		if (x === 32 || x === 64) {
+      		setTimeout(() => { return message.reply('You won ' + x + 'x Decas! [JACKPOT]'); }, 2000);
+      		var hash = crypto.getHashes(); 
+      		var num = x.toString();
+      		var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
+      		setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
+		}
+		else {
+			setTimeout(() => { return message.reply('You won ' + x + 'x Decas!'); }, 2000);	
+      		var hash = crypto.getHashes(); 
+      		var num = x.toString();
+      		var hashPwd = crypto.createHash('sha1').update(num).digest('hex'); 
+      		setTimeout(() => { return message.channel.send("||" + hashPwd + "||") }, 2000);
+		}
+	}
+    //check if user has Admin role
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
 
     if(cmd === `${prefix}thicket`){
         var embed = new Discord.MessageEmbed()
@@ -372,7 +426,7 @@ bot.on("message", async message => {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Purchase Decas & STs")
-	.addField("Additional Info:",
+		.addField("Additional Info:",
 		"Minimum Purchase of 16 Decas\nBulk Purchases are Subject to Discount")
         .setThumbnail("https://media2.giphy.com/media/MXjdlNtjfxjxQsevj6/giphy.gif")
         .addField("Price:",
@@ -427,7 +481,7 @@ bot.on("message", async message => {
         "<@728448495085682758>, is vouched and finish your orders at the highest proficiency. Charles has been playing RotMG for over 9+ years and has gained MANY vouches in a short amount of time.\n You will not go wrong when buying from him!")
         .addField("In this service:",
 		"One UT Double means that your characters inventory will be doubled. We highly advise putting 8 items in the inventory to maximize the value for money.")
-	.setDescription("Information about our Doubling Service")
+		.setDescription("Information about our Doubling Service")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
@@ -438,7 +492,7 @@ bot.on("message", async message => {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("UT Doubling")
-	.addField("Info:",
+		.addField("Info:",
 		"1 Double = 8 Items in an Inventory Being Doubled")
         .addField("\nPricing:",
          "One Double: `$25.00`\nTwo Doubles: `$40.00`\nProceeding Doubles: `$10.00` Per Double")
@@ -458,7 +512,7 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/a2K3BpC.png")
         .addField("Additional Info:",
         "Must purchase at least 24 vault and char slots combined.")
-	.addField("Pricing:",
+		.addField("Pricing:",
 		"24 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.\n**10% OFF IF ALL VAULTS UNLOCKED!**")
         .setDescription("Purchase the cheapest vaults and slots")
         .setFooter("NexusMart")
@@ -471,7 +525,7 @@ bot.on("message", async message => {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Oryx 3 Rune Doubling")
-	.setThumbnail("https://i.imgur.com/uPLEGcD.png")
+		.setThumbnail("https://i.imgur.com/uPLEGcD.png")
         .addField("Pricing:",
         "24 - 64 : $1.50 ea.\n64+ : $1.25 ea.")
         .setDescription("Need Oryx 3 Runes doubled? Start a ticket!")
@@ -489,7 +543,7 @@ bot.on("message", async message => {
         .setThumbnail("https://i.imgur.com/OJKeuVG.png")
         .addField("Additional Info:",
         "If you would like to discuss pricing for bringing your pet to a certain level or rarity, start a ticket.")
-	.addField("Pricing:",
+		.addField("Pricing:",
 		"24 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Pet Food")
         .setFooter("NexusMart")
@@ -504,7 +558,7 @@ bot.on("message", async message => {
         .addField("Requirements:",
         "Must have At least one Quest Chest or ST token/chest!")
         .setThumbnail("https://i.imgur.com/KOHUjk0.png")
-	.addField("Pricing:",
+		.addField("Pricing:",
 		"24 - 63 : $1.50 Ea.\n64 - 127 : $1.25 Ea.\n128 - 256 : $1.00 Ea.\n256+ : $0.75 Ea.")
         .setDescription("Purchase the cheapest Quest Chest & ST Chest Doubles")
         .setFooter("NexusMart")
@@ -516,7 +570,7 @@ bot.on("message", async message => {
         var embed = new Discord.MessageEmbed()
         .setColor(0x695DCF)
         .setTitle("Keys/Shards/Clovers/Etc. Doubling")
-	.setThumbnail("https://i.imgur.com/efX1IUQ.png")
+		.setThumbnail("https://i.imgur.com/efX1IUQ.png")
         .addField("Keys/Shards/Clovers:",
         "24+ : $0.625 ea.")
         .addField("Other Items:",
@@ -536,7 +590,7 @@ bot.on("message", async message => {
         ":ribbon: We sell accounts on this channel! If you would like to sell your account, DM me and we can put it up here! If you would like to buy an account, please check out the pictures posted here and start a ticket to discuss a price or purchase the account!:ribbon:")
         .addField("**IMPORTANT NOTICE:**",
 		"None of the accounts sold are stolen.\nAll of our accounts are either created by the our staff, bought from people that are looking to sell their account, or accounts we are selling for people and giving them a cut.")
-	.setDescription("Want to buy an account? Start a ticket!")
+		.setDescription("Want to buy an account? Start a ticket!")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
@@ -563,9 +617,25 @@ bot.on("message", async message => {
         .setColor(0x695DCF)
         .setTitle("Welcome to NexusMart's Test of Luck!")
         .setThumbnail("https://media2.giphy.com/media/PjTywYBHJkrLV24gSR/giphy.gif")
+		.addField("What can you win?",
+		"2 - 32 Decas!")
         .addField("Price:",
-        "1 Spin: $2.50\n2 Spins: $4.50\n5 Spins: $11.00\n10 Spins: $21.00\n20 Spins: $40.00\nAdditional Spins: $1.75")
+        "1 Spin: $2.30\n2 Spins: $4.60\n5 Spins: $11.50 **MOST POPULAR**\n10 Spins: $23.00\n20 Spins: $40.00 **BEST VALUE**\nAdditional Spins: $1.90")
         .setDescription("Instructions:\n1. Start a ticket\n2. Specify how many spins you would like to purchase\n3. Test your luck!")
+        .setFooter("NexusMart")
+        .setTimestamp()
+        message.channel.send(embed)
+    }
+    if(cmd === `${prefix}prroulette`){
+        var embed = new Discord.MessageEmbed()
+        .setColor(0x695DCF)
+        .setTitle("Welcome to NexusMart's **PREMIUM** Test of Luck!")
+        .setThumbnail("https://media2.giphy.com/media/PjTywYBHJkrLV24gSR/giphy.gif")
+		.addField("What can you win?",
+		"8 - 64 Decas!")
+        .addField("Price:",
+        "1 Spin: $4.30\n2 Spins: $8.60\n5 Spins: $21.50 **MOST POPULAR**\n10 Spins: $43.00\n20 Spins: $75.00 **BEST VALUE**\nAdditional Spins: $3.80")
+        .setDescription("Instructions:\n1. Start a ticket\n2. Specify how many spins you would like to purchase\n3. Test your luck the **PREMIUM** way!")
         .setFooter("NexusMart")
         .setTimestamp()
         message.channel.send(embed)
@@ -618,27 +688,46 @@ bot.on("message", async message => {
         message.channel.send(embed)
 		
     }
-	
+	 
    if(cmd === `${prefix}ban`){
-       const user = message.mentions.users.first();
-       if(isNaN(user)){
-           return message.channel.send("Please specify a user to ban!")
-       }
-       const member = message.guild.member(user);
-       member.ban()
-       message.channel.send(member + " was banned! ✅")
+	const user = message.mentions.users.first();
+        if(isNaN(user)){
+            return message.channel.send("Please specify a user to ban!")
+       	 }
+       	 const member = message.guild.member(user);
+       	 member.ban()
+       	 message.channel.send(member + " was banned! ✅")
    }
 
    if(cmd === `${prefix}kick`){
-       const user = message.mentions.users.first();
-       if(isNaN(user)){
-        return message.channel.send("Please specify a user to kick!")
+       	const user = message.mentions.users.first();
+       	if(isNaN(user)){
+           return message.channel.send("Please specify a user to kick!")
+    	}
+       	const member = message.guild.member(user);
+       	member.kick()
+       	message.channel.send(member + " was kicked! ✅")
     }
-       const member = message.guild.member(user);
-       member.kick()
-       message.channel.send(member + " was kicked! ✅")
-   }
-	
+    if (cmd === `${prefix}muteall`) {
+		let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+		for (const [memberID, member] of channel.members) {
+			member.voice.setMute(true);
+		}
+		channel.join()
+		channel.setUserLimit(1);	
+		message.channel.send("Mute's Complete!")
+	}
+   
+    if (cmd === `${prefix}unmuteall`) {
+		let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+		for (const [memberID, member] of channel.members) {
+			member.voice.setMute(false);
+		}
+		channel.setUserLimit(0);
+		channel.leave();
+		message.channel.send("Unmute's Complete!")
+	}   
+
 })
 
 bot.login(process.env.BOT_TOKEN)
