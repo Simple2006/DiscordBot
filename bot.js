@@ -373,7 +373,7 @@ bot.on("message", async message => {
         .setTitle("Skin Shop")
         .setThumbnail("https://i.imgur.com/vLzXg9O.png")
         .addField("Price per skin:",
-        "1-7 Skins: ~~$0.70~~ ea.\n8-15 Skins: ~~$0.64~~ ea.\n16-31 Skins: ~~$0.60~~ ea.\n31-40+ Skins: ~~$0.56~~ ea.\n**Every Skin in Stock**")
+        "1-7 Skins: $0.70 ea.\n8-15 Skins: $0.64 ea.\n16-31 Skins: $0.60 ea.\n31-40+ Skins: $0.56 ea.\n**Stock Shown Below**")
         .setDescription("Purchase the cheapest skins")
         .setFooter("NexusMart")
         .setTimestamp()
