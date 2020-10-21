@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //start of code
 const Discord = require("discord.js");
 const crypto = require("crypto");
@@ -1466,4 +1465,3 @@ bot.on("message", async message => {
 })
 
 bot.login(process.env.BOT_TOKEN)
->>>>>>> a5144b6d47b6c25705fac20ed44aa1f29198b0e4
