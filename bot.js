@@ -430,7 +430,7 @@ bot.on("message", async message => {
 		"Minimum Purchase of 16 Decas\nBulk Purchases are Subject to Discount")
         .setThumbnail("https://media2.giphy.com/media/MXjdlNtjfxjxQsevj6/giphy.gif")
         .addField("Price:",
-        "Decas: $0.25 ea.\nSTs: $0.25 ea.\n\n**Bulk Purchases are Heavily Discounted**")
+        "Decas: $0.30 ea.\n\n**Bulk Purchases are Heavily Discounted**")
         .setDescription("Purchase the cheapest Decas/STs")
         .setFooter("NexusMart")
         .setTimestamp()
@@ -572,7 +572,7 @@ bot.on("message", async message => {
         .setTitle("Keys/Shards/Clovers/Etc. Doubling")
 		.setThumbnail("https://i.imgur.com/efX1IUQ.png")
         .addField("Keys/Shards/Clovers:",
-        "24+ : $0.625 ea.")
+        "24+ : $1.00 ea.")
         .addField("Other Items:",
         "Start a ticket to discuss pricing!")
         .setDescription("Start a ticket!")
