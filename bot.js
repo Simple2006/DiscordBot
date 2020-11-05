@@ -511,7 +511,7 @@ bot.on("message", async message => {
         "Must have at least 1 unlocker or coupon for the requested commodity!")
         .setThumbnail("https://i.imgur.com/a2K3BpC.png")
         .addField("Additional Info:",
-        "Must purchase at least 24 vault and char slots combined.")
+        "Must purchase at least $24 worth of vault and char slots combined.")
 		.addField("Pricing:",
 		"24 - 63 : $1.50 Ea.\n64 - 140 : $1.25 Ea.\n**10% OFF IF ALL VAULTS UNLOCKED!**")
         .setDescription("Purchase the cheapest vaults and slots")
