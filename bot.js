@@ -572,7 +572,7 @@ bot.on("message", async message => {
         .setTitle("Keys/Shards/Clovers/Etc. Doubling")
 		.setThumbnail("https://i.imgur.com/efX1IUQ.png")
         .addField("Keys/Shards/Clovers:",
-        "24+ : $1.00 ea.")
+        "24 - 63 : $1.50 ea.\n64+ : $1.00")
         .addField("Other Items:",
         "Start a ticket to discuss pricing!")
         .setDescription("Start a ticket!")
