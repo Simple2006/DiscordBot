@@ -430,7 +430,7 @@ bot.on("message", async message => {
 		"Minimum Purchase of 16 Decas\nBulk Purchases are Subject to Discount")
         .setThumbnail("https://media2.giphy.com/media/MXjdlNtjfxjxQsevj6/giphy.gif")
         .addField("Price:",
-        "Decas: $0.30 ea.\nST's: $0.30 ea.\n\n**Bulk Purchases are Heavily Discounted**")
+        "Decas: $0.25 ea.\nST's: $0.25 ea.\n\n**Bulk Purchases are Heavily Discounted**")
         .setDescription("Purchase the cheapest Decas/STs")
         .setFooter("NexusMart")
         .setTimestamp()
