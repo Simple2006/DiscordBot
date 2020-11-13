@@ -204,7 +204,7 @@ bot.on("message", async message => {
 		}
 	}
     //check if user has Admin role
-    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Loser')) return;
+    if (!memberId || !memberId.roles.cache.some(role => role.name === 'Admin')) return;
 
     if(cmd === `${prefix}thicket`){
         var embed = new Discord.MessageEmbed()
